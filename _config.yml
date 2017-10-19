@@ -1,0 +1,103 @@
+# Site settings
+title: Gordon Blog
+SEOTitle: 邓高登的博客 | Gordon Blog
+header-img: img/home-bg.jpg
+email: gordondeng@foxmail.com
+description: "My world is not beautiful. If you well, is sunny."
+keyword: "邓高登, Gordon, Gordon-Deng, 邓高登的博客, Gordon Blog, 博客, 个人网站, 互联网, USTC, 许洋, stellar"
+url: "https://gordon.net.cn"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     Gordon-Deng
+zhihu_username:     Gordon-Deng
+github_username:    Gordon-Deng
+twitter_username:   Gordon-Deng
+#facebook_username:  Gordon-Deng
+# linkedin_username:  firstname-lastname-idxxxx
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+disqus_username: Gordon
+
+# Netease setttings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-108346965-1'            # Format: UA-xxxxxx-xx
+ga_domain: gordon.net.cn
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "&nbsp;&nbsp;&nbsp;或许每一天都很難<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可一年比一年容易&nbsp;&nbsp;&nbsp;"
+sidebar-avatar: /img/avatar-gordon.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+{
+title: Markdown,
+href: "https://www.zybuluo.com"
+},
+{
+title: xuyang,
+href: "http://blog.csdn.net/xu_xyy"
+},
+{
+title: 崔庆才爬虫,
+href: "http://cuiqingcai.com"
+}
+
+
+]
