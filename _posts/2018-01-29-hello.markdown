@@ -4,7 +4,7 @@ title:      "Hello World, Hello Blog"
 subtitle:   " \"但行好事，莫问前程\""
 date:       2018-01-29 12:00:00
 author:     "Gordon"
-header-img: "img/2018-01-29-helloworld/post-bg.jpg"
+header-img: "img/in-post/2018-01-29-helloworld/post-bg.jpg"
 catalog: true
 tags:
     - 生活
