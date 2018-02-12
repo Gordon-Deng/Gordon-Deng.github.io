@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      "Hello 2015"
-subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-01-29 12:00:00
-author:     "Hux"
-header-img: "img/post-bg-2015.jpg"
+title:      "Hello World, Hello Blog"
+subtitle:   " \"但行好事，莫问前程\""
+date:       2018-01-29 12:00:00
+author:     "Gordon"
+header-img: "img/2018-01-29-helloworld/post-bg.jpg"
 catalog: true
 tags:
     - 生活
@@ -15,24 +15,16 @@ tags:
 
 ## 前言
 
-Hux 的 Blog 就这么开通了。
-	
-	Here is an example of AppleScript:
-
-    tell application "Foo"
-        beep
-    end tell
+邓高登 | Gordon 的 Blog 就这么开通了。
+> ***其实是拖延症太严重懒得写博客而已***
 
 [跳过废话，直接看技术实现 ](#build) 
 
 
+2018 年，邓高登 总算鼓起勇气找个地方可以好好写点东西了。
 
-2015 年，Hux 总算有个地方可以好好写点东西了。
 
-
-作为一个程序员， Blog 这种轮子要是挂在大众博客程序上就太没意思了。一是觉得大部分 Blog 服务都太丑，二是觉得不能随便定制不好玩。之前因为太懒没有折腾，结果就一直连个写 Blog 的地儿都没有。
-
-在玩了一段时间知乎之后，答题的快感又激起了我开博客的冲动。之前的[个人网站](http://huangxuan.me/portfolio)是作品集形式的（现在集成进来了），并不适合用来写博文，一不做二不休，花一天搞一个吧！
+作为一个伪程序员，或许有人会问为什么会这么说自己，答案是：`水啊 ` 没好好写过代码，读的还是软件工程，哪好意思说自己是敲代码的。[毕竟敲代码是门神圣的武功](#end)个人博客还是觉得有个自己的窝比较好，所以就没有挂在大众网站上。一是觉得笔者水平有限，应该先闭门造一波轮子，修一门绝学再出山比较好，二是想如果能随便定制的话应该可以好好玩一下，个人某些神奇的想法可以瞎搞一波。之前还是因为太懒没有动手写博客，其实博客框架早已搞出来的，结果就一直连个写 Blog 的地儿都没有。
 
 
 <p id = "build"></p>
@@ -84,5 +76,11 @@ Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Les
 如果你恰好逛到了这里，希望你也能喜欢这个博客主题。
 
 —— Hux 后记于 2015.10
+
+
+<p id = "end"></p>
+---
+
+[ORZ  瞎点啥呢，回去吧 ](#build)
 
 
