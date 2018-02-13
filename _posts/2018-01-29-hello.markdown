@@ -85,7 +85,7 @@ Github Pages需要一个命名格式为`(Username).github.io`的仓库进行托�
 ![](/img/in-post/2018-01-29-helloworld/post-jekyllHome.png)
 *Duang~*
 
-## 绑定域名
+### 绑定域名
 
 既然是个人站点，一般来说都会想要个性一点的域名,比如带有公司名，人名或者特定意义等：`www.alibaba.com`,`www.john.com`,`www.helloworld.com`
 
@@ -151,7 +151,36 @@ tags:
 ![](/img/in-post/2018-01-29-helloworld/post-macdown.png)
 更多Markdown语法可参考[Markdown 语法说明 (简体中文版)](https://www.appinn.com/markdown/)
 
+### 发布
 
+> Mac用户其实对命令行应该比较熟悉，但要是每发布一个博文都要使用Git命令未免太繁琐。
+
+熟悉的配方：`cd`到本地博客目录，使用`git add`添加要上传的代码，`git commit -m`附加描述信息，`git push origin master`推送至Github
+```
+$ cd {你刚才clone下来的项目文件夹路径}
+$ git add .
+$ git commit -m "statement"   //此处statement填写此次提交修改的内容，作为日后查阅
+$ git push origin master
+```
+
+#### 每次都要四部曲？No,NO,NO!
+
+[Github Desktop](https://desktop.github.com/) 拯救你：每次本地仓库改变后，只要你在Github Desktop中添加过本地路径，他都可以识别出来你项目的变化，只需要输入`Summary`框中的描述,再点击`push`就可以轻松上传变更。
+
+![](/img/in-post/2018-01-29-helloworld/post-githubdesktop.png)
+
+## 黑科技集合
+* [Github Desktop](https://desktop.github.com/) -- 快捷的Github管理器
+* [MacDown](http://macdown.uranusjr.com/) -- 便利的MarkDown编辑器
+* [ImageOptim](https://imageoptim.com/mac) -- 轻巧的图片压缩器
+
+## 后记
+
+匆忙文笔，轻薄技术，仅为抛砖引玉，记录和激励自己。后期会添加Jekyll一些常用插件（查找文章，记录访问人数，评论功能等）的实现记录。
+
+**希望一切都不算太晚** 
+ 
+邓高登，2月14于湛江。
 <p id = "end"></p>
 ---
 
