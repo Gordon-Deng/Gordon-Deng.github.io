@@ -126,7 +126,32 @@ Github Pages需要一个命名格式为`(Username).github.io`的仓库进行托�
 ![](/img/in-post/2018-01-29-helloworld/post-jekyll-site-fork2.png)
 此时你会发现已经可以通过 http://(YourUserName).github.io 访问你fork下来的网站啦！
 
-笔者推荐直接把心仪的主题clone到本地，因为后面可以对
+笔者推荐直接把心仪的主题`download`到本地，因为后面写博客时可以本地校验，同时可以去掉fork字眼。
+
+### 撰写博客
+
+打开本地仓库的 `_posts` 文件夹，你的所有博文都将放在这里，写新博文只需要新建一个标准文件名的文件，在文件中编写文章内容。 比如说该篇博文会以在 `2018-01-29-hello.markdown`格式存放在 `_posts`中，文件命名要严格遵循 `年-月-日-文章标题.文档格式` 这样的格式，尤其要注意月份和日期一定是两位数。
+
+Markdown首段应对博文信息进行配置：
+```
+---
+layout:     post(项目位置)
+title:      "（外部显示主标题）"
+subtitle:   " \"（外部显示副标题）\""
+date:       (xxxx-xx-xx xx:xx:xx格式时间戳)
+author:     "（作者）"
+header-img: "（主图路径）"
+catalog: （是否使用分类，true/false）
+tags:
+    - （博文类别）
+---
+```
+
+**Mac环境下推荐使用[MacDown](http://macdown.uranusjr.com/),免费好用，有左右对照功能**
+![](/img/in-post/2018-01-29-helloworld/post-macdown.png)
+更多Markdown语法可参考[Markdown 语法说明 (简体中文版)](https://www.appinn.com/markdown/)
+
+
 <p id = "end"></p>
 ---
 
