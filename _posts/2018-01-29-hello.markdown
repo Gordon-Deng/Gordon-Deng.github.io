@@ -107,8 +107,26 @@ Github Pages需要一个命名格式为`(Username).github.io`的仓库进行托�
 
 随后也要设置Github Pages对域名的CNAME:
 * 方法一：打开仓库下的CNAME文件，添加一行信息`你的域名：xxx.xxx.xxx`
-* 方法二：在仓库settings里对Github Pages属性进行设定 [绑定域名看此图](#setting) 
+* 方法二：在仓库“Settings”里对"Github Pages"属性进行设定 [绑定域名看此图](#setting) 
 
+**至此，一个可以通过自己域名访问的站点就这么生成啦。**
+
+
+## 进阶
+
+> 是不是觉得官方的主题丑丑的？巧了！我也是这样想的，毕竟自己写博客的窝，当然要漂漂亮亮啦，一家人当然要整整齐齐啦，emmm，瞎扯啥呢- -！）
+
+### 挑选“模版”
+
+[Jekyll项目的wiki页面](https://github.com/jekyll/jekyll/wiki/sites)给出了大量优秀的风格各异的网站。进入wiki页，点击任意blog右边的source链接，进入到作者的模版仓库。
+![](/img/in-post/2018-01-29-helloworld/post-jekyll-site.png)
+然后Fork到你的仓库中。
+![](/img/in-post/2018-01-29-helloworld/post-jekyll-site-fork.png)
+点击“Settings”，将“Repository name”改为 (你Github的名字).github.io，点击“Rename”。
+![](/img/in-post/2018-01-29-helloworld/post-jekyll-site-fork2.png)
+此时你会发现已经可以通过 http://(YourUserName).github.io 访问你fork下来的网站啦！
+
+笔者推荐直接把心仪的主题clone到本地，因为后面可以对
 <p id = "end"></p>
 ---
 
