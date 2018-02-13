@@ -15,6 +15,8 @@ tags:
 
 ## 前言
 
+邓高登 | Gordon 的 Blog 就这么开通了。
+
 > ***其实是拖延症太严重懒得写博客而已***
 
 
@@ -55,7 +57,7 @@ tags:
 
 ## Github & Git
 
-Git是一种分布式版本控制系统，由大名鼎鼎的Linux操作系统创建人Linus Torvalds编写，当时的目的是用来管理Linux内核的源码。
+Git是一种分布式版本控制系统，由大名鼎鼎的Linux操作系统创建人Linus Torvalds编写，当时的目的是用来管理Linux内核的源码。  
 Github是全球知名的使用Git系统的一个免费远程仓库（Repository），倡导开源理念，若要将自己的代码仓库私有则需付费.
 
 ## 后记
