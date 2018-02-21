@@ -1,0 +1,191 @@
+---
+layout:     post
+title:      "Java BigDecimal 8种舍入模式 源码分析&图解"
+subtitle:   "对比 java.util.Math类 四舍五入方法"
+date:       2018-01-29 12:00:00
+author:     "Gordon"
+header-img: "img/in-post/2018-01-29-helloworld/post-bg.jpg"
+catalog: true
+tags:
+    - 生活
+    - haha
+    - nihao
+---
+
+> “Yeah It's on. ”
+
+
+## 前言
+
+邓高登 Gordon. 的 Blog 就这么开通了。
+
+> ***其实是拖延症太严重懒得写博客而已***
+
+
+该博文旨在记录自己的建站过程，所以会掺杂个人逗比情结，也并不是一篇严格意义上来讲的技术博文&建站攻略，不喜勿喷。
+
+
+[跳过废话，直接看技术实现 ](#build) 
+
+
+2018 年，邓高登 总算鼓起勇气找个地方可以好好写点东西了。
+
+
+作为一个伪程序员，或许有人会问为什么会这么说自己，答案是：`水啊 ` 没好好写过代码，读的还是软件工程，哪好意思说自己是敲代码的。[毕竟敲代码是门神圣的武功](#end) 个人博客还是觉得有个自己的窝比较好，所以就没有挂在大众网站上。一是觉得笔者水平有限，应该先闭门造一波轮子，修一门绝学再出山比较好，二是想如果能随便定制的话应该可以好好玩一下，个人某些神奇的想法可以瞎搞一波。之前还是因为太懒没有动手写博客，博客框架早已搞出来啦，结果就一直连个写 Blog 的地儿都没有。
+
+
+<p id = "build"></p>
+---
+
+## 正文
+
+接下来说说这个博客实现的技术细节。  
+
+[知乎](https://www.zhihu.com/question/20223939)上有关于 [GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 快速建立个人博客的技术方案，人人都是代码的搬运工！
+
+其优点非常明显：
+
+* **Markdown** 带来的优雅写作体验，离线写完再上传也可以哦
+* 非常熟悉的 Git workflow ，**Git Commit 即 Blog Post**
+* 利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机，免费，而且方便
+* 再者，自定义域名一年也就几十块，也只需要简单改改 DNS 加个 CNAME 就好了 
+* Jekyll 有各种各样的模版，自定义也非常容易，基本就是个模版引擎套用 
+
+缺点的话：
+
+* 可能需要一点代码基础
+* 部分资源在境外，可能需要梯子或者更换下载源
+
+
+### Github & Git
+
+Git是一种分布式版本控制系统，由大名鼎鼎的Linux操作系统创建人Linus Torvalds编写，当时的目的是用来管理Linux内核的源码。  
+Github是全球知名的使用Git系统的一个免费远程仓库（Repository），倡导开源理念，若要将自己的代码仓库私有则需付费.
+
+**如果想当一个合格的吃瓜群众，首先你得有个瓜吧**   [Github账号注册 → ](https://github.com/)
+
+![](/img/in-post/2018-01-29-helloworld/post-github.png)
+
+### Github Pages
+
+[Github Pages](https://en.wikipedia.org/wiki/GitHub_Pages)是Github 为其用户，用户博客，用户项目提供的静态网页Web托管服务。而且，其与Jekyll交互较好，可直接托管Jekyll源码生成的博客和静态网页，当托管仓库更新时，可以自动生成站点。
+![](/img/in-post/2018-01-29-helloworld/post-githubPages.png)
+*Websites for you and your projects.*
+
+Github Pages需要一个命名格式为`(Username).github.io`的仓库进行托管代码，所以需要用户在github上新建一个仓库，如XXX.github.io
+![](/img/in-post/2018-01-29-helloworld/post-github-repositories.png)
+*点击`NEW`进行新建仓库.*
+![](/img/in-post/2018-01-29-helloworld/post-github-repositories-2.png)
+*示例仅为说明命名格式（笔者这里本身已有一个，所以会显示红色通知）.*
+
+打开新建好仓库的settings，有一个Github Pages的设置，点击source中的默认显示的None，使其变成master分支，即部署github pages的分支，然后点save，可在`Theme Chooser`里选择一个官方给的主题来测试是否发布成功.
+<p id = "setting"></p>
+---
+![](/img/in-post/2018-01-29-helloworld/post-githubPages-3.png)
+
+一切顺利的话，打开`https://(Username).github.io`就能看到刚刚建好的站点。
+![](/img/in-post/2018-01-29-helloworld/post-jekyllHome.png)
+*Duang~*
+
+### 绑定域名
+
+既然是个人站点，一般来说都会想要个性一点的域名,比如带有公司名，人名或者特定意义等：`www.alibaba.com`,`www.john.com`,`www.helloworld.com`
+
+国内主流域名提供商有[阿里云](https://www.aliyun.com/)，[百度云](https://cloud.baidu.com)，[腾讯云](https://cloud.tencent.com)  
+国外主流域名提供商有[Godaddy](www.godaddy.com)，[Name](Name.com)
+
+以笔者从阿里云租用的域名为例，首先想好一个响亮而又文雅域名，`www`可以先不考虑，因为后面解析时可以再带不带着万维网标志位，
+![](/img/in-post/2018-01-29-helloworld/post-address.png)
+
+域名注册好后，需要进行实名制验证（相当于备案，大约需要3-5个工作日），随后就可以将域名进行解析，使域名指向网站空间IP,也就是指向`(Username).github.io`. 
+* 记录类型：CNAME
+* 主机类型：@（解析主域名，可换乘www/mail/m）
+* 解析线路：默认
+* 记录值：(Username).github.io(指向新建Github Pages站点)
+* TTL值：10分钟
+
+![](/img/in-post/2018-01-29-helloworld/post-address-3.png)
+*最后记得点启用*
+
+随后也要设置Github Pages对域名的CNAME:
+* 方法一：打开仓库下的CNAME文件，添加一行信息`你的域名：xxx.xxx.xxx`
+* 方法二：在仓库“Settings”里对"Github Pages"属性进行设定 [绑定域名看此图](#setting) 
+
+**至此，一个可以通过自己域名访问的站点就这么生成啦。**
+
+
+## 进阶
+
+> 是不是觉得官方的主题丑丑的？巧了！我也是这样想的，毕竟自己写博客的窝，当然要漂漂亮亮啦，一家人当然要整整齐齐啦，emmm，瞎扯啥呢- -！）
+
+### 挑选“模版”
+
+[Jekyll项目的wiki页面](https://github.com/jekyll/jekyll/wiki/sites)给出了大量优秀的风格各异的网站。进入wiki页，点击任意blog右边的source链接，进入到作者的模版仓库。
+![](/img/in-post/2018-01-29-helloworld/post-jekyll-site.png)
+然后Fork到你的仓库中。
+![](/img/in-post/2018-01-29-helloworld/post-jekyll-site-fork.png)
+点击“Settings”，将“Repository name”改为 (你Github的名字).github.io，点击“Rename”。
+![](/img/in-post/2018-01-29-helloworld/post-jekyll-site-fork2.png)
+此时你会发现已经可以通过 http://(YourUserName).github.io 访问你fork下来的网站啦！
+
+笔者推荐直接把心仪的主题`download`到本地，因为后面写博客时可以本地校验，同时可以去掉fork字眼。
+
+### 撰写博客
+
+打开本地仓库的 `_posts` 文件夹，你的所有博文都将放在这里，写新博文只需要新建一个标准文件名的文件，在文件中编写文章内容。 比如说该篇博文会以在 `2018-01-29-hello.markdown`格式存放在 `_posts`中，文件命名要严格遵循 `年-月-日-文章标题.文档格式` 这样的格式，尤其要注意月份和日期一定是两位数。
+
+Markdown首段应对博文信息进行配置：
+```
+---
+layout:     post(项目位置)
+title:      "（外部显示主标题）"
+subtitle:   " \"（外部显示副标题）\""
+date:       (xxxx-xx-xx xx:xx:xx格式时间戳)
+author:     "（作者）"
+header-img: "（主图路径）"
+catalog: （是否使用分类，true/false）
+tags:
+    - （博文类别）
+---
+```
+
+**Mac环境下推荐使用[MacDown](http://macdown.uranusjr.com/),免费好用，有左右对照功能**
+![](/img/in-post/2018-01-29-helloworld/post-macdown.png)
+更多Markdown语法可参考[Markdown 语法说明 (简体中文版)](https://www.appinn.com/markdown/)
+
+### 发布
+
+> Mac用户其实对命令行应该比较熟悉，但要是每发布一个博文都要使用Git命令未免太繁琐。
+
+熟悉的配方：`cd`到本地博客目录，使用`git add`添加要上传的代码，`git commit -m`附加描述信息，`git push origin master`推送至Github
+```
+$ cd {你刚才clone下来的项目文件夹路径}
+$ git add .
+$ git commit -m "statement"   //此处statement填写此次提交修改的内容，作为日后查阅
+$ git push origin master
+```
+
+#### 每次都要四部曲？No,NO,NO!
+
+[Github Desktop](https://desktop.github.com/) 拯救你：每次本地仓库改变后，只要你在Github Desktop中添加过本地路径，他都可以识别出来你项目的变化，只需要输入`Summary`框中的描述,再点击`push`就可以轻松上传变更。
+
+![](/img/in-post/2018-01-29-helloworld/post-githubdesktop.png)
+
+## 黑科技集合
+* [Github Desktop](https://desktop.github.com/) -- 快捷的Github管理器
+* [MacDown](http://macdown.uranusjr.com/) -- 便利的MarkDown编辑器
+* [ImageOptim](https://imageoptim.com/mac) -- 轻巧的图片压缩器
+
+## 后记
+
+匆忙文笔，轻薄技术，仅为抛砖引玉，记录和激励自己。后期会添加Jekyll一些常用插件（查找文章，记录访问人数，评论功能等）的实现记录。
+
+**希望一切都不算太晚** 
+ 
+邓高登，2月14于湛江。
+<p id = "end"></p>
+---
+
+[ORZ  瞎点啥呢，回去吧 ](#build)
+
+
