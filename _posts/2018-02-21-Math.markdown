@@ -90,6 +90,7 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 **<center>Rounding mode CEILING Examples</center>**
 
 | Input Number 	| Input rounded to one digit with CEILING rounding|| - 	| :-:	|| 5.5	| 6	|| 2.5	| 3	|| 1.6	| 2	|| 1.1	| 2	|| 1	| 1	|| -1	| -1	|| -1.1	| -1	|| -1.6	| -1	|| -2.5	| -2	|| -5.5	| -5	|
+
 ![](img/in-post/2018-02-21-math/CEILING.png)
 
 ### FLOOR
@@ -100,6 +101,7 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 **<center>Rounding mode FLOOR Examples</center>**
 
 | Input Number 	| Input rounded to one digit with FLOOR rounding|| - 	| :-:	|| 5.5	| 5	|| 2.5	| 2	|| 1.6	| 1	|| 1.1	| 1	|| 1	| 1	|| -1	| -1	|| -1.1	| -2	|| -1.6	| -2	|| -2.5	| -3	|| -5.5	| -6	|
+
 ![](img/in-post/2018-02-21-math/FLOOR.png)
 
 ### HALF-UP
@@ -110,6 +112,7 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 **<center>Rounding mode HALF-UP Examples</center>**
 
 | Input Number 	| Input rounded to one digit with HALF-DOWN rounding|| - 	| :-:	|| 5.5	| 6	|| 2.5	| 3	|| 1.6	| 2	|| 1.1	| 1	|| 1	| 1	|| -1	| -1	|| -1.1	| -1	|| -1.6	| -2	|| -2.5	| -3	|| -5.5	| -6	|
+
 ![](img/in-post/2018-02-21-math/HALF-UP.png)
 
 ### HALF-DOWN
@@ -120,6 +123,7 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 **<center>Rounding mode HALF-DOWN Examples</center>**
 
 | Input Number 	| Input rounded to one digit with HALF-EVEN rounding|| - 	| :-:	|| 5.5	| 5	|| 2.5	| 2	|| 1.6	| 2	|| 1.1	| 1	|| 1	| 1	|| -1	| -1	|| -1.1	| -1	|| -1.6	| -2	|| -2.5	| -2	|| -5.5	| -5	|
+
 ![](img/in-post/2018-02-21-math/HALF-DOWN.png)
 
 ### HALF-EVEN
@@ -131,6 +135,7 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 **<center>Rounding mode HALF-EVEN Examples</center>**
 
 | Input Number 	| Input rounded to one digit with HALF-EVEN rounding|| - 	| :-:	|| 5.5	| 6	|| 2.5	| 2	|| 1.6	| 2	|| 1.1	| 1	|| 1	| 1	|| -1	| -1	|| -1.1	| -1	|| -1.6	| -2	|| -2.5	| -2	|| -5.5	| -6	|
+
 ![](img/in-post/2018-02-21-math/HALF-EVEN.png)
 
 ### UNNECESSARY
@@ -140,4 +145,5 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 **<center>Rounding mode UNNECESSARY Examples</center>**
 
 | Input Number 	| Input rounded to one digit with UNNECESSARY rounding|| - 	| :-:	|| 5.5	| throw ArithmeticException	|| 2.5	| throw ArithmeticException	|| 1.6	| throw ArithmeticException	|| 1.1	| throw ArithmeticException	|| 1	| 1	|| -1	| -1	|| -1.1	| throw ArithmeticException	|| -1.6	| throw ArithmeticException	|| -2.5	| throw ArithmeticException	|| -5.5	| throw ArithmeticException	|
+
 ![](img/in-post/2018-02-21-math/UNNECESSARY.png)
