@@ -72,7 +72,8 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 |-1.6	|-2 |
 |-2.5	|-3 |
 |-5.5	|-6 |
-![](img/in-post/2018-02-21-math/UP.png)
+
+![](/img/in-post/2018-02-21-math/UP.png)
 
 ### DOWN
 向接近零的方向舍入。舍弃非零部分，同时不会非零舍弃部分相邻的一位数字加一，采取截取行为。
@@ -80,7 +81,8 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 **<center>Rounding mode DOWN Examples</center>**
 
 | Input Number 	| Input rounded to one digit with DOWN rounding || - 	| :-:	|| 5.5	| 5	|| 2.5	| 2	|| 1.6	| 1	|| 1.1	| 1	|| 1	| 1	|| -1	| -1	|| -1.1	| -1	|| -1.6	| -1	|| -2.5	| -2	|| -5.5	| -5	|
-![](img/in-post/2018-02-21-math/DOWN.png)
+
+![](/img/in-post/2018-02-21-math/DOWN.png)
 
 ### CEILING
 * 向正无穷的方向舍入。如果为正数，舍入结果同ROUND_UP一致；
@@ -91,7 +93,7 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 
 | Input Number 	| Input rounded to one digit with CEILING rounding|| - 	| :-:	|| 5.5	| 6	|| 2.5	| 3	|| 1.6	| 2	|| 1.1	| 2	|| 1	| 1	|| -1	| -1	|| -1.1	| -1	|| -1.6	| -1	|| -2.5	| -2	|| -5.5	| -5	|
 
-![](img/in-post/2018-02-21-math/CEILING.png)
+![](/img/in-post/2018-02-21-math/CEILING.png)
 
 ### FLOOR
 * 向负无穷的方向舍入。如果为正数，舍入结果同ROUND_DOWN一致；
@@ -102,7 +104,7 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 
 | Input Number 	| Input rounded to one digit with FLOOR rounding|| - 	| :-:	|| 5.5	| 5	|| 2.5	| 2	|| 1.6	| 1	|| 1.1	| 1	|| 1	| 1	|| -1	| -1	|| -1.1	| -2	|| -1.6	| -2	|| -2.5	| -3	|| -5.5	| -6	|
 
-![](img/in-post/2018-02-21-math/FLOOR.png)
+![](/img/in-post/2018-02-21-math/FLOOR.png)
 
 ### HALF-UP
 * 向“最接近”的数字舍入，如果与两个相邻数字的距离相等，则为向上舍入的舍入模式。
@@ -113,7 +115,7 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 
 | Input Number 	| Input rounded to one digit with HALF-DOWN rounding|| - 	| :-:	|| 5.5	| 6	|| 2.5	| 3	|| 1.6	| 2	|| 1.1	| 1	|| 1	| 1	|| -1	| -1	|| -1.1	| -1	|| -1.6	| -2	|| -2.5	| -3	|| -5.5	| -6	|
 
-![](img/in-post/2018-02-21-math/HALF-UP.png)
+![](/img/in-post/2018-02-21-math/HALF-UP.png)
 
 ### HALF-DOWN
 * 向“最接近”的数字舍入，如果与两个相邻数字的距离相等，则为向下舍入的舍入模式。
@@ -124,7 +126,7 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 
 | Input Number 	| Input rounded to one digit with HALF-EVEN rounding|| - 	| :-:	|| 5.5	| 5	|| 2.5	| 2	|| 1.6	| 2	|| 1.1	| 1	|| 1	| 1	|| -1	| -1	|| -1.1	| -1	|| -1.6	| -2	|| -2.5	| -2	|| -5.5	| -5	|
 
-![](img/in-post/2018-02-21-math/HALF-DOWN.png)
+![](/img/in-post/2018-02-21-math/HALF-DOWN.png)
 
 ### HALF-EVEN
 * 向“最接近”的数字舍入，如果与两个相邻数字的距离相等，则相邻的偶数舍入。
@@ -136,7 +138,7 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 
 | Input Number 	| Input rounded to one digit with HALF-EVEN rounding|| - 	| :-:	|| 5.5	| 6	|| 2.5	| 2	|| 1.6	| 2	|| 1.1	| 1	|| 1	| 1	|| -1	| -1	|| -1.1	| -1	|| -1.6	| -2	|| -2.5	| -2	|| -5.5	| -6	|
 
-![](img/in-post/2018-02-21-math/HALF-EVEN.png)
+![](/img/in-post/2018-02-21-math/HALF-EVEN.png)
 
 ### UNNECESSARY
 * 断言请求的操作具有精确的结果，因此不需要舍入。
@@ -146,4 +148,4 @@ Math.round(1.02456789 * 100) * 0.01d;//精确到两位小数
 
 | Input Number 	| Input rounded to one digit with UNNECESSARY rounding|| - 	| :-:	|| 5.5	| throw ArithmeticException	|| 2.5	| throw ArithmeticException	|| 1.6	| throw ArithmeticException	|| 1.1	| throw ArithmeticException	|| 1	| 1	|| -1	| -1	|| -1.1	| throw ArithmeticException	|| -1.6	| throw ArithmeticException	|| -2.5	| throw ArithmeticException	|| -5.5	| throw ArithmeticException	|
 
-![](img/in-post/2018-02-21-math/UNNECESSARY.png)
+![](/img/in-post/2018-02-21-math/UNNECESSARY.png)
