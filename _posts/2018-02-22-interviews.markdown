@@ -100,7 +100,7 @@ tags:
   * 插入: `O(log(n))`
   * 删除: `O(log(n))`
 
-<img src="/Images/BST.png?raw=true" alt="Binary Search Tree" width="400" height="500">
+<img src="/img/in-post/2018-02-22-interviews/BST.png?raw=true" alt="Binary Search Tree" width="400" height="500">
 
 ### Trie
 * 字典树，又称基数树或者前缀树，能够用于存储键为字符串的动态集合或者关联数组的搜索树。树中的节点并没有直接存储关联键值，而是该节点在树中的挂载位置决定了其关联键值。某个节点的所有子节点都拥有相同的前缀，整棵树的根节点则是空字符串。
