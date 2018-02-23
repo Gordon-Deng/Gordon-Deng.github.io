@@ -147,7 +147,7 @@ tags:
     * **无向图（Undirected Graph）**: 无向图具有对称的邻接矩阵，因此如果存在某条从节点 u 到节点 v 的边，反之从 v 到 u 的边也存在。
     * **有向图（Directed Graph）**: 有向图的邻接矩阵是非对称的，即如果存在从 u 到 v 的边并不意味着一定存在从 v 到 u 的边。
 
-<img src="/Images/graph.png?raw=true" alt="Graph" width="400" height="500">
+<img src="/img/in-post/2018-02-22-interviews/graph.png?raw=true" alt="Graph" width="400" height="500">
 
 ## 算法
 
