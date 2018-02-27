@@ -13,17 +13,17 @@ tags:
 
 # 操作系统
 * [页面置换算法](http://blog.csdn.net/u011080472/article/details/51206332)
-
 * [作业调度算法](http://c.biancheng.net/cpp/html/2595.html)
 * [线程进程区别](http://blog.csdn.net/yanxiaolx/article/details/51763372)
 
 ### 计算机网络
-* 七层模型
-* 三次握手四次挥手
-* 拥塞控制
-* get和post区别
-* http、RPC基础
-* TCP打开/关闭
+* [七层模型](https://www.cnblogs.com/lemo-/p/6391095.html)
+* [三次握手](https://www.zhihu.com/question/24853633)
+* [四次挥手](https://www.zhihu.com/question/24853633)
+* [拥塞控制](https://www.cnblogs.com/losbyday/p/5847041.html)
+* [get和post区别](https://www.cnblogs.com/longm/p/7205318.html?utm_source=itdadao&utm_medium=referral)
+* [http、RPC基础](http://blog.csdn.net/xlgen157387/article/details/53543009)
+* [TCP打开/关闭](http://blog.csdn.net/wdscq1234/article/details/52422657)
 
 
 ### 数据结构
