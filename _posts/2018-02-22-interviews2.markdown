@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Java 软件工程技术 面试 个人指南#2"
+title:      "Java 软件工程技术 面试 个人指南 (二)"
 subtitle:   "\"一切都是为了做个不后悔的自己\""
 date:       2018-02-24 12:00:00
 author:     "Gordon"
@@ -26,10 +26,10 @@ tags:
 * [TCP打开/关闭](http://blog.csdn.net/wdscq1234/article/details/52422657)
 
 ## 数据结构
-* 链表常规操作
-* 环链判定
-* 二叉树
-* B树（结合数据库索引、存储）
+* [链表常规操作](http://blog.csdn.net/kangaroo_07/article/details/77726071)
+* [环链判定](http://blog.csdn.net/u010098159/article/details/44956621)
+* [二叉树](http://blog.csdn.net/fengrunche/article/details/52305748)
+* [B树（结合数据库索引、存储）](http://blog.csdn.net/wwh578867817/article/details/50493940)
 * 红黑树几乎没涉及
 
 ## 数据库
