@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Java 软件工程技术 面试 个人指南"
-subtitle:   "一切都是为了做个不后悔的自己"
+subtitle:   "\"一切都是为了做个不后悔的自己\""
 date:       2018-02-22 12:00:00
 author:     "Gordon"
 header-img: "img/in-post/2018-02-22-interviews/interviews-bg.jpg"
