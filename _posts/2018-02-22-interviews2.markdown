@@ -33,10 +33,12 @@ tags:
 * 红黑树几乎没涉及
 
 ## 数据库
-* 四大特性，原子性需要特别注意
-* mybatis和hibernate的知识（pojo、映射…）
-* 读写分离，非常常用
-* 服务器负载均衡（随机、轮询、活跃度调用、一致性哈希）
+* [四大特性](https://www.jianshu.com/p/b0d0c0b04fb7)
+ - [原子性](http://blog.sina.com.cn/s/blog_70555f1701017kw7.html)
+* [mybatis](https://www.w3cschool.cn/mybatis/)
+* [hibernate](https://www.zhihu.com/question/21104468)（pojo、映射…）
+* [读写分离](http://blog.csdn.net/justdb/article/details/17331569)，非常常用
+* [服务器负载均衡](https://www.cnblogs.com/xrq730/p/5154340.html)（随机、轮询、活跃度调用、一致性哈希）
 * 机房备份之类的就是比较常用的，但是很简单的，实际生产很常用。
 
 ## 常见算法
