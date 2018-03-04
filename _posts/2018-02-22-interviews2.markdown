@@ -44,7 +44,7 @@ tags:
 ## 常见算法
 * 排序
 ![](/img/in-post/2018-02-24-interviews2/suanfa.jpg)
-* top K问题
+* [top K问题](http://blog.csdn.net/Healist/article/details/56928503)
 
 ## linux
 * chmod
