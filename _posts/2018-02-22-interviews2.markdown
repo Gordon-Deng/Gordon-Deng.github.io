@@ -43,6 +43,7 @@ tags:
 
 ## 常见算法
 * 排序
+![](/img/in-post/2018-02-24-interviews2/suanfa.jpg)
 * top K问题
 
 ## linux
