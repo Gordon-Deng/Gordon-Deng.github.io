@@ -14,13 +14,14 @@ tags:
 
 > * 原文地址：[java提高篇-集合大家族](http://cmsblogs.com/?p=106)
 > * 作者：[chenssy](http://cmsblogs.com)
+> * 这是一篇转载的博文，笔者对其中一些东西加入了自己的理解和补充，仅为记录之用。
 
 # Java集合
 
 在编写java程序中，我们最常用的除了八种基本数据类型，String对象外还有一个集合类，在我们的的程序中到处充斥着集合类的身影！java中集合大家族的成员实在是太丰富了，有常用的ArrayList、HashMap、HashSet，也有不常用的Stack、Queue，有线程安全的Vector、HashTable，也有线程不安全的LinkedList、TreeMap等等！
 
 ![](/img/in-post/2018-03-07-collection/collection-jt.jpg)
-java集合大家族—图
+java集合大家族
 
 ## 一、Collection接口
 
