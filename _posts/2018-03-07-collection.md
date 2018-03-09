@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      Java Collection 基本原理 & 使用注意事项
+title:      "Java Collection 基本原理 & 使用注意事项"
 subtitle:   "\"Java 集合 大家族\""
 date:       2018-03-07 12:00:00
-author:     Gordon
+author:     "Gordon"
 header-img: "img/in-post/2018-03-07-collection/collection-bg.jpg"
 catalog: true
 tags:
