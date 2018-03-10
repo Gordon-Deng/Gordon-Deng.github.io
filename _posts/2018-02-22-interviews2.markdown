@@ -19,8 +19,18 @@ tags:
 ## 计算机网络
 * [七层模型](https://www.cnblogs.com/lemo-/p/6391095.html)
 * [三次握手](https://www.zhihu.com/question/24853633)
+
+为什么连接建立需要三次握手，而不是两次握手？ 防止失效的连接请求报文段被服务端接收，从而产生错误。PS：失效的连接请求：若客户端向服务端发送的连接请求丢失，客户端等待应答超时后就会再次发送连接请求，此时，上一个连接请求就是『失效的』。若建立连接只需两次握手，客户端并没有太大的变化，仍然需要获得服务端的应答后才进入
+
+ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状态。此时如果网络拥塞，客户端发送的连接请求迟迟到不了服务端，客户端便超时重发请求，如果服务端正确接收并确认应答，双方便开始通信，通信结束后释放连接。此时，如果那个失效的连接请求抵达了服务端，由于只有两次握手，服务端收到请求就会进入ESTABLISHED状态，等待发送数据或主动发送数据。但此时的客户端早已进入CLOSED状态，服务端将会一直等待下去，这样浪费服务端连接资源。
+
 * [四次挥手](https://www.zhihu.com/question/24853633)
+
+为了保证B能收到A的确认应答。 
+若A发完确认应答后直接进入CLOSED状态，那么如果该应答丢失，B等待超时后就会重新发送连接释放请求，但此时A已经关闭了，不会作出任何响应，因此B永远无法正常关闭。
+
 * [拥塞控制](https://www.cnblogs.com/losbyday/p/5847041.html)
+* [关于tcp中time_wait状态的4个问题](https://www.cnblogs.com/mfmdaoyou/p/6715422.html )
 * [get和post区别](https://www.cnblogs.com/longm/p/7205318.html?utm_source=itdadao&utm_medium=referral)
 * [http、RPC基础](http://blog.csdn.net/xlgen157387/article/details/53543009)
 * [TCP打开/关闭](http://blog.csdn.net/wdscq1234/article/details/52422657)
@@ -49,7 +59,7 @@ tags:
 ## linux
 * chmod
 * top 
-* grep
+* [grep](http://man.linuxde.net/grep)
 
 ## jvm
 * 分区
@@ -57,6 +67,7 @@ tags:
 * 分代模型
 * 类加载过程
 * 双亲委派
+* [synchronized的底层](https://www.cnblogs.com/paddix/p/5367116.html)
 
 ## java基础
 * 继承封装多态深拷贝
