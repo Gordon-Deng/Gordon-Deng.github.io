@@ -25,6 +25,45 @@ tags:
 
 数据统计的需求非常普遍，通过原子递增保持计数。例如，点赞数、收藏数、分享数等。
 
+1、首先我们需要计算所有出现过的用户设备号(SELECT distinct(user_device) FROM `statistic_20180201` UNION SELECT distinct(user_device) FROM `statistic_20180202`)，把这些设备号存在redis的集合中
+
+`($redis>sadd('user_device','6ab3d84ace678644f44645'))
+`
+
+---
+
+2、再计算当天出现的所有设备号(SELECT distinct(user_device) FROM `statistic_20180203`)，将这些设备号存在redis临时集合中
+
+`
+($redis>sadd('tmp_20180203','5a6vhbb84ace678fgv44f44645')；
+`
+
+---
+
+3、利用redis的sdiffstore命令，返回user_device和tmp_20180203两个集合的差集,这个新的new_20180203集合，就是当日(20180203)的新增用户，为避免占用内存，需给这个new_20180203集合设置过期时间，由于要算次日留存率，所以new_20180203集合的生存期设为1天(同理，要算七日留存率，则设置7天生存期)；
+
+`($redis>sdiffstore('new_20180203',"user_device","tmp_20180203))`
+
+4、利用redis的SCARD命令，得出new_20180203这个集合的元素数量
+
+`($redis->SCARD('new_20180203'))`
+
+5、不要忘记，将当天的用户设备号合并进user_device集合中，利用redis的SUNIONSTORE命令`$redis>sunionstore('user_device',"user_device","tmp_20170803")`,再用`$redis->del('tmp_20170803')`,删除这个临时集合；
+
+6、计算次日留存率，我们要计算8月4日出现的所有设备号`(SELECT distinct(user_device) FROM statistic_20170804)`，将这些设备号存在redis临时集合中
+
+`($redis>sadd('tmp_20170804','5a6vhbb84ace678fgv44f44645')；`
+
+7、利用redis的SINTERSTORE命令，`$redis>sinterstore('next_day_retention',"new_20180203","tmp_20180204")`，返回new_20180203和tmp_20180204两个集合的并集，就是8月3日新增的用户，8月4日也正常登陆的用户集合了；
+
+8、利用redis的SCARD命令，得出next_day_retention这个集合的元素数量`($redis->SCARD('next_day_retention'))`，就是当天新增的用户，在注册的第2天还登录的用户数；
+
+9、之前给new_20180203这个集合设置一天的生存期就派上用场了，利用redis的SCARD命令，得出new_20180203这个集合的元素数量`($redis->SCARD('new_20180203'))`，就是20170803新增的用户数量；
+
+10、再通过除法运算，`$redis>SCARD('next_day_retention') / $redis->SCARD('new_20180203')`，得出的就是8月3日的次日留存率了。
+
+
+
 ### 排行榜
 
 排行榜按照得分进行排序，例如，展示最近、最热、点击率最高、活跃度最高等等条件的top list。
