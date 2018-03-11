@@ -4,7 +4,7 @@ title:      "Java 进阶知识 - Jvm "
 subtitle:   "\"《深入理解JVM》读书笔记\""
 date:       2018-03-08 12:00:00
 author:     "Gordon"
-header-img: "img/in-post/2018-03-09-jvm/jvm-bg.jpg"
+header-img: "img/in-post/2018-03-08-jvm/jvm-bg.jpg"
 catalog: true
 tags:
     - Java
