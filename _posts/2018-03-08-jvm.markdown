@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Java 进阶知识 - Jvm "
+title:      "Java 进阶知识 (一) - Jvm "
 subtitle:   "\"《深入理解JVM》读书笔记\""
 date:       2018-03-08 12:00:00
 author:     "Gordon"
