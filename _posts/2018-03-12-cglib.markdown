@@ -30,5 +30,101 @@ Java中代理的实现一般分为三种：
 代理类和被代理类通常会存在关联关系(即上面提到的持有的被带离对象的引用)，代理类本身不实现服务，而是通过调用被代理类中的方法来提供服务。
 
 ![](/img/in-post/2018-03-12-Proxy/static-1.png)
-<center><font color=gray size=4>接口</font></center>
---
+<center style="color:gray">接口</center>
+
+![](/img/in-post/2018-03-12-Proxy/dynamic-2.png)
+<center style="color:gray">被代理类</center>
+
+![](/img/in-post/2018-03-12-Proxy/static-3.png)
+<center style="color:gray">代理类</center>
+
+![](/img/in-post/2018-03-12-Proxy/static-4.png)
+<center style="color:gray">测试类</center>
+
+优点：通过直接编码创建，很容易就完成了对一个类的代理操作
+
+缺点：由于代理只能为一个类服务，如果需要代理的类很多，那么就需要编写大量的代理类，比较繁琐。
+
+## JDK动态代理
+
+![](/img/in-post/2018-03-12-Proxy/dynamic-1.png)
+<center style="color:gray">接口</center>
+
+![](/img/in-post/2018-03-12-Proxy/dynamic-2.png)
+<center style="color:gray">被代理类</center>
+
+![](/img/in-post/2018-03-12-Proxy/dynamic-3.png)
+<center style="color:gray">代理类</center>
+
+![](/img/in-post/2018-03-12-Proxy/dynamic-4.png)
+<center style="color:gray">测试类</center>
+
+JDK动态代理其实也是基本接口实现的。因为通过接口指向实现类实例的多态方式，可以有效地将具体实现与调用解耦，便于后期的修改和维护。
+
+动态代理中，核心是InvocationHandler。每一个代理的实例都会有一个关联的调用处理程序(InvocationHandler)。对待代理实例进行调用时，将对方法的调用进行编码并指派到它的调用处理器(InvocationHandler)的invoke方法。所以对代理对象实例方法的调用都是通过InvocationHandler中的invoke方法来完成的，而invoke方法会根据传入的代理对象、方法名称以及参数决定调用代理的哪个方法。
+
+优点：利用反射机制在运行时创建代理类，我们不需要知道要针对哪个接口、哪个被代理类创建代理类，因为它是在运行时被创建的。
+
+缺点：被代理类必须实现接口，有很强的局限性
+
+## CGLIB动态代理
+
+在Spring AOP中，通常会用它来生成AopProxy对象。不仅如此，在Hibernate中PO(Persistant Object 持久化对象)字节码的生成工作也要靠它来完成。
+
+JDK代理要求被代理的类必须实现接口，有很强的局限性。而CGLIB动态代理则没有此类强制性要求。简单的说，CGLIB会让生成的代理类继承被代理类，并在代理类中对代理方法进行强化处理.
+
+![](/img/in-post/2018-03-12-Proxy/cglib-1.png)
+<center style="color:gray">使用Maven引进Cglib包或直接导包</center>
+
+![](/img/in-post/2018-03-12-Proxy/cglib-2.png)
+<center style="color:gray">被代理类</center>
+
+![](/img/in-post/2018-03-12-Proxy/cglib-3.png)
+<center style="color:gray">MethodInterceptor接口生成方法拦截器</center>
+
+![](/img/in-post/2018-03-12-Proxy/cglib-4.png)
+<center style="color:gray">测试类</center>
+
+### 生成代理类对象
+
+代理类对象是由Enhancer类创建的。Enhancer是CGLIB的字节码增强器，可以很方便的对类进行拓展。但Enhancer不能够拦截final方法，例如Object.getClass()方法，这是由于Java final方法语义决定的。基于同样的道理，Enhancer也不能对fianl类进行代理操作。这也是Hibernate为什么不能持久化final class的原因。
+
+创建代理对象的几个步骤:
+
+1. 生成代理类的二进制字节码文件
+2. 加载二进制字节码，生成Class对象( 例如使用`Class.forName()`方法 
+3. 通过反射机制获得实例构造，并创建代理类对象
+4. 执行enhancer.create()动态生成一个代理类，并从Object强制转型成父类型
+
+### 对委托类进行代理
+
+在intercept方法中，我们除了会调用委托方法，还会进行一些增强操作。在Spring AOP中，典型的应用场景就是在某些敏感方法执行前后进行操作日志记录。
+
+`public Object intercept(Object obj, Method method, Object[] params,  MethodProxy proxy) throws Throwable {} `
+
+     * 重写方法拦截在方法前和方法后加入业务 
+     * Object obj为目标对象 
+     * Method method为目标方法 
+     * Object[] params 为参数， 
+     * MethodProxy proxy CGlib方法代理对象 
+
+![](/img/in-post/2018-03-12-Proxy/intercept-1.png)
+<center style="color:gray">intercept()</center>
+
+![](/img/in-post/2018-03-12-Proxy/intercept-2.png)
+<center style="color:gray">回调方法</center>
+
+而invokeSuper()源码：
+
+![](/img/in-post/2018-03-12-Proxy/intercept-3.png)
+<center style="color:gray">invokeSuper()</center>
+
+在CGLIB中，方法的调用并不是通过反射来完成的，而是直接对方法进行调用：FastClass对Class对象进行特别的处理，比如将会用数组保存method的引用，每次调用方法的时候都是通过一个index下标来保持对方法的引用。
+
+## 小结
+
+代理方式 | 实现 | 优点 | 缺点 | 特点
+:- | :-: | :-: | :-: | -:  
+JDK静态代理 | 代理类与委托类实现同一接口，并且在代理类中需要硬编码接口 | 实现简单，容易理解 | 代理类需要硬编码接口，在实际应用中可能会导致重复编码，浪费存储空间并且效率很低 | 基础  
+JDK动态代理 | 代理类与委托类实现同一接口，主要是通过代理类实现InvocationHandler并重写invoke方法来进行动态代理的，在invoke方法中将对方法进行增强处理 | 不需要硬编码接口，代码复用率高 | 只能够代理实现了接口的委托类 | 底层使用反射机制进行方法的调用 
+CGLIB动态代理 | 代理类将委托类作为自己的父类并为其中的非final委托方法创建两个方法：与委托方法签名相同的方法，通过super调用委托方法；代理类独有的方法。在代理方法中，它会判断是否存在实现了MethodInterceptor接口的对象，若存在则将调用intercept方法对委托方法进行代理 | 可以在运行时对类或者是接口进行增强操作，且委托类无需实现接口 | 不能对final类以及final方法进行代理 | 底层将方法全部存入一个数组中，通过数组索引直接进行方法调用
