@@ -2,9 +2,9 @@
 layout:     post
 title:      "Java 进阶（二）- HashMap 扩容 位运算 原理 "
 subtitle:   "\"HashMap 扩容 & HashCode 妙用\""
-date:       2018-03-11 12:00:00
+date:       2018-03-12 12:00:00
 author:     "Gordon"
-header-img: "img/in-post/2018-03-11-hashmap-resize/hashmap-resize-bg.jpg"
+header-img: "img/in-post/2018-03-12-hashmap-resize/hashmap-resize-bg.jpg"
 catalog: true
 tags:
     - Java
@@ -23,14 +23,14 @@ HashMap有两个参数影响其性能：初始容量和加载因子。
 * 最大容量`MAXIMUM_CAPACITY`是2^30 = 1,073,741,824
 * 默认加载因子`DEFAULT_LOAD_FACTOR`是0.75
 
-![](/img/in-post/2018-03-11-hashmap-resize/hashmap-cap.png)
+![](/img/in-post/2018-03-12-hashmap-resize/hashmap-cap.png)
 
 默认域：
 * Entry数组`Node<K,V>[] table`，哈希表，长度必须为2的幂  
 * 已存元素的个数`size`
 * 下次扩容的临界值`threshold`，size>=threshold就会扩容 
 
-![](/img/in-post/2018-03-11-hashmap-resize/hashmap-fields.png)
+![](/img/in-post/2018-03-12-hashmap-resize/hashmap-fields.png)
 
 HashMap在put元素时，如果哈希表中的条目数超出了加载因子与当前容量的乘积时，通过调用 rehash 方法将容量翻倍。
 
@@ -38,7 +38,7 @@ HashMap在put元素时，如果哈希表中的条目数超出了加载因子与�
 
 首先来一段源码：
 
-![](/img/in-post/2018-03-11-hashmap-resize/hashmap-&.png)
+![](/img/in-post/2018-03-12-hashmap-resize/hashmap-&.png)
 
 **看到最后一行了么？位运算！！计算中战斗机，数值转换中的高富帅～**
 
