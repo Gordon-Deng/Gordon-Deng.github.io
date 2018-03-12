@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Java 基础知识（一）- Collection "
+title:      "Java 基础知识（一）- Collection 集合"
 subtitle:   "\"Java 集合 大家族 & 使用注意事项\""
 date:       2018-03-07 12:00:00
 author:     "Gordon"
