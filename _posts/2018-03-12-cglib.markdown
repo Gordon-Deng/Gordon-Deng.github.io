@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "Java 进阶知识 (二) - Proxy 代理模式"
+title:      "Java 进阶知识 (二) - Proxy 代理模式 "
 subtitle:   "\"浅谈JDK静态代理，JDK动态代理以及CGLIB动态代理异同\""
-date:       2018-03-12 12:00:00
+date:       2018-03-11 12:00:00
 author:     "Gordon"
 header-img: "img/in-post/2018-03-12-Proxy/Proxy-bg.jpg"
 catalog: true
@@ -10,6 +10,7 @@ tags:
     - Java
     - Proxy
 ---
+
 
 > 本文是基于`jdk1.8`&`CGLIB 3.1`来对Java代理模式的底层机制进行简浅探究
 
@@ -29,5 +30,5 @@ Java中代理的实现一般分为三种：
 代理类和被代理类通常会存在关联关系(即上面提到的持有的被带离对象的引用)，代理类本身不实现服务，而是通过调用被代理类中的方法来提供服务。
 
 ![](/img/in-post/2018-03-12-Proxy/static-1.png)
-接口
+<center><font color=gray size=4>接口</font></center>
 --
