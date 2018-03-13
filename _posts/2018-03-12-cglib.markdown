@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Java 进阶知识 (二) - Proxy 代理模式 "
+title:      "Java 进阶知识（二）- Proxy 代理模式 "
 subtitle:   "\"浅谈JDK静态代理，JDK动态代理以及CGLIB动态代理异同\""
 date:       2018-03-11 12:00:00
 author:     "Gordon"

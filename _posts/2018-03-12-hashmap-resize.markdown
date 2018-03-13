@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Java 进阶知识（二）- HashMap 扩容 位运算 原理 "
+title:      "Java 进阶知识（三）- HashMap 扩容 位运算 原理 "
 subtitle:   "\"HashMap 扩容 & HashCode 妙用\""
 date:       2018-03-12 12:00:00
 author:     "Gordon"
