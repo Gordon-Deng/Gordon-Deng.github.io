@@ -26,8 +26,12 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 
 * [四次挥手](https://www.zhihu.com/question/24853633)
 
+**为什么A要先进入TIME-WAIT状态，等待2MSL时间后才进入CLOSED状态？**
+
 为了保证B能收到A的确认应答。 
 若A发完确认应答后直接进入CLOSED状态，那么如果该应答丢失，B等待超时后就会重新发送连接释放请求，但此时A已经关闭了，不会作出任何响应，因此B永远无法正常关闭。
+
+挥手次数比握手多一次，是因为握手过程，通信只需要处理连接。而挥手过程，通信需要处理数据+连接。
 
 * [拥塞控制](https://www.cnblogs.com/losbyday/p/5847041.html)
 * [关于tcp中time_wait状态的4个问题](https://www.cnblogs.com/mfmdaoyou/p/6715422.html )
@@ -57,27 +61,51 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 * [top K问题](http://blog.csdn.net/Healist/article/details/56928503)
 
 ## linux
-* chmod
-* top 
+* [chmod](http://www.runoob.com/linux/linux-comm-chmod.html)
+* [top](http://www.runoob.com/linux/linux-comm-top.html) 
 * [grep](http://man.linuxde.net/grep)
 
-## jvm
-* 分区
-* 垃圾判定
-* 分代模型
-* 类加载过程
-* 双亲委派
+## [jvm](http://raising.iteye.com/blog/2377709)
+* [分区](http://www.blogjava.net/abin/archive/2013/11/09/406159.html)
+* [垃圾判定](https://baijiahao.baidu.com/s?id=1589450732159463534&wfr=spider&for=pc)
+* [分代模型](https://www.jianshu.com/p/f6197bfc61b0)
+* [java垃圾回收算法之-标记清除](http://blog.csdn.net/linsongbin1/article/details/51577310)
+* [java垃圾回收算法之-coping复制](http://blog.csdn.net/linsongbin1/article/details/51668859)
+* [java垃圾回收算法之-标记__清除_压缩](http://blog.csdn.net/linsongbin1/article/details/51668525)
+* [标记-压缩中怎么实现压缩](http://blog.csdn.net/njys1/article/details/53725240)
+* [java垃圾回收算法之-CMS(并发标记清除)](http://blog.csdn.net/zhaozhenzuo/article/details/76769196)
+* [类加载过程](http://blog.csdn.net/boyupeng/article/details/47951037)
+* [双亲委派](https://www.cnblogs.com/lanxuezaipiao/p/4138511.html)
+* 面试题：能不能自己写个类叫java.lang.System？
+
+答案：通常不可以，但可以采取另类方法达到这个需求。 
+解释：为了不让我们写System类，类加载采用委托机制，这样可以保证爸爸们优先，爸爸们能找到的类，儿子就没有机会加载。而System类是Bootstrap加载器加载的，就算自己重写，也总是使用Java系统提供的System，自己写的System类根本没有机会得到加载。
+
+但是，我们可以自己定义一个类加载器来达到这个目的，为了避免双亲委托机制，这个类加载器也必须是特殊的。由于系统自带的三个类加载器都加载特定目录下的类，如果我们自己的类加载器放在一个特殊的目录，那么系统的加载器就无法加载，也就是最终还是由我们自己的加载器加载。
+
+Bootstrap Loader（启动类加载器） ：加载System.getProperty(“sun.boot.class.path”)所指定的路径或jar 
+Extended Loader（标准扩展类加载器ExtClassLoader） ：加载System.getProperty(“java.ext.dirs”)所指定的路径或jar。在使用Java运行程序时，也可以指定其搜索路径，例如：java -Djava.ext.dirs=d:\projects\testproj\classes HelloWorld 
+AppClass Loader（系统类加载器AppClassLoader） ：加载System.getProperty(“java.class.path”)所指定的路径或jar。在使用Java运行程序时，也可以加上-cp来覆盖原有的Classpath设置，例如： java -cp ./lavasoft/classes HelloWorld 
+特点
+
 * [synchronized的底层](https://www.cnblogs.com/paddix/p/5367116.html)
 
 ## java基础
-* 继承封装多态深拷贝
+* 继承封装多态
+* [深拷贝浅拷贝](http://blog.csdn.net/XIAXIA__/article/details/41652057)
 * 重载重写
 * java接口弥补没有多继承
-* 静态绑定和动态绑定
-* 值传递/引用传递
-* final和static
-* hashcode和equals（重写问题）
-* hashmap源码（jdk1.8变动）
+* [静态绑定和动态绑定](https://droidyue.com/blog/2014/12/28/static-biding-and-dynamic-binding-in-java/)
+* [值传递/引用传递](http://blog.csdn.net/zhzhao999/article/details/53449504)
+* [final和static](https://www.cnblogs.com/author-zr/p/5486609.html)
+* [hashcode和equals](http://blog.csdn.net/u013679744/article/details/57074669)（重写问题）
+
+   * 若对象是相等的，那么对这两个对象中的每个对象调用 hashCode 方法都必须生成相同的整数结果。
+   * 对象不相等，那么对这两个对象中的任一对象上调用 hashCode 方法不要求一定生成不同的整数结果。
+   * 但为不相等的对象生成不同整数结果可以提高哈希表的性能，避免冲突
+   * hashset 先用hash看是否有重复，在用equal看是否重复
+
+* [hashmap源码（jdk1.8变动）](http://blog.csdn.net/unscdf117/article/details/78729674?locationNum=2&fps=1)
 * hashmap和hashtable区别
 * 线程（启动方式、状态切换）
 * synchronized和volatile、可重入锁
