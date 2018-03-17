@@ -34,6 +34,7 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 挥手次数比握手多一次，是因为握手过程，通信只需要处理连接。而挥手过程，通信需要处理数据+连接。
 
 * [拥塞控制](https://www.cnblogs.com/losbyday/p/5847041.html)
+* [滑动窗口流量控制](https://www.cnblogs.com/woaiyy/p/3554182.html)
 * [关于tcp中time_wait状态的4个问题](https://www.cnblogs.com/mfmdaoyou/p/6715422.html )
 * [get和post区别](https://www.cnblogs.com/longm/p/7205318.html?utm_source=itdadao&utm_medium=referral)
 * [http、RPC基础](http://blog.csdn.net/xlgen157387/article/details/53543009)
@@ -52,8 +53,13 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 * [mybatis](https://www.w3cschool.cn/mybatis/)
 * [hibernate](https://www.zhihu.com/question/21104468)（pojo、映射…）
 * [读写分离](http://blog.csdn.net/justdb/article/details/17331569)，非常常用
-* [服务器负载均衡](https://www.cnblogs.com/xrq730/p/5154340.html)（随机、轮询、活跃度调用）
-* [一致性哈希](http://blog.csdn.net/gerryke/article/details/53939212)
+* [服务器负载均衡](https://www.cnblogs.com/xrq730/p/5154340.html)（随机、轮询、活跃度调用、一致性哈希）
+   * [一致性哈希](http://blog.csdn.net/gerryke/article/details/53939212)
+   * 随机，没啥好说的
+   * [轮询](http://blog.csdn.net/liupeng_family/article/details/73162326)
+   * [Dubbo的四个负载均衡算法](http://blog.csdn.net/revivedsun/article/details/71330126)
+   * [活跃度调用by Dubbo](http://blog.csdn.net/revivedsun/article/details/71330126)
+* [负载均衡之一致Hash](http://blog.csdn.net/lihao21/article/details/54193868)
 * [redis为什么快](http://blog.csdn.net/ysc1123/article/details/64438888)
     * [Redis快的主要原因是：](http://blog.csdn.net/wwd0501/article/details/78959481)
         * 基于内存的采用的是单进程单线程模型的KV数据库
