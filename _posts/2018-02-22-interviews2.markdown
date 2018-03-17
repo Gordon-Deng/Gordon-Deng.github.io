@@ -64,6 +64,7 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 * [chmod](http://www.runoob.com/linux/linux-comm-chmod.html)
 * [top](http://www.runoob.com/linux/linux-comm-top.html) 
 * [grep](http://man.linuxde.net/grep)
+* [基本问题](http://blog.csdn.net/zhang_guyuan/article/details/60467007)
 
 ## [jvm](http://raising.iteye.com/blog/2377709)
 * [分区](http://www.blogjava.net/abin/archive/2013/11/09/406159.html)
@@ -103,11 +104,30 @@ AppClass Loader（系统类加载器AppClassLoader） ：加载System.getPropert
    * 若对象是相等的，那么对这两个对象中的每个对象调用 hashCode 方法都必须生成相同的整数结果。
    * 对象不相等，那么对这两个对象中的任一对象上调用 hashCode 方法不要求一定生成不同的整数结果。
    * 但为不相等的对象生成不同整数结果可以提高哈希表的性能，避免冲突
-   * hashset 先用hash看是否有重复，在用equal看是否重复
+   * hashset 先用hash看曹位是否有重复，在用equal看entry链路中是否重复
 
 * [hashmap源码（jdk1.8变动）](http://blog.csdn.net/unscdf117/article/details/78729674?locationNum=2&fps=1)
-* hashmap和hashtable区别
-* 线程（启动方式、状态切换）
+* [超级详细的hashcode（）和hash（）讲解](https://www.cnblogs.com/tonyluis/p/5671873.html)
+* [hashmap和hashtable区别](http://blog.csdn.net/fujiakai/article/details/51585767)
+
+  * Hashtable的方法是同步的，Hashmap的方法是不同步的，所以多线程场合要手动同步HashMap，这个区别就像是Vecgtor和ArrayList一样
+  * Hashtable不允许Null值（Key 和Value都不行），Hashmap允许Null值（key和value可以）
+  * 两个遍历方式有差别，Hashtable仅仅比HashMap多一个elements方法。hashtable和hashmap都可以通过values（）返回一个set，然后进行遍历处理
+  * hashtable使用enumeration，hashmap使用iterator
+  * 哈希值使用不同，hashtable直接使用对象的hashcode，而hashmap重新计算hash值，并且用于代替求模
+  * hashtable中的hash数组默认大小为11，增加的方式是old*2+1,hashmap中hash数组默认是16，而且一定是2的指数
+  * hashtable基于dictionary类，而hashmap基于abstractmap
+
+**HashMap线程不安全的原因** 
+
+HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, value, i); 
+此时如果有两个线程T1和T2,两个线程同时对一个数组位置调用addEntry方法,T1和T2都能获得相同槽位(bucketIndex)的Node
+
+* [线程（启动方式、状态切换）](https://segmentfault.com/a/1190000005006079)
+* [Java中的NIO（非同步用塞），BIO（同步用塞），AIO（异步）](https://www.cnblogs.com/2017112wu/p/6835956.html)
+* [NIO BIO AIO链接2](https://baijiahao.baidu.com/s?id=1573998393898438&wfr=spider&for=pc)
+   * BIO 做完一件事再去做另一件事，一件事一定要等前一件事做完
+   * 
 * synchronized和volatile、可重入锁
 
 ## spring
