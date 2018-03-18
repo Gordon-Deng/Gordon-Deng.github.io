@@ -11,6 +11,8 @@ tags:
     - Interview
 ---
 
+> by : 法源(蚂蚁金服)
+
 ## 操作系统
 * [页面置换算法](http://blog.csdn.net/u011080472/article/details/51206332)
 * [作业调度算法](http://c.biancheng.net/cpp/html/2595.html)
