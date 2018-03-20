@@ -144,7 +144,7 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 * [NIO BIO AIO链接2](https://baijiahao.baidu.com/s?id=1573998393898438&wfr=spider&for=pc)
    * BIO 做完一件事再去做另一件事，一件事一定要等前一件事做完
    * 
-* synchronized和volatile、可重入锁
+* [synchronized和volatile、可重入锁](http://blog.csdn.net/ztchun/article/details/60778950)
 * [乐观锁的一种实现方式——CAS](http://www.importnew.com/20472.html)
 
 ## spring
