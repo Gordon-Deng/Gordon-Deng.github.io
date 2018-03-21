@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Java 基础知识（二）- JDK1.9 中运用的设计模式 "
+title:      "Java 基础知识（二）- JDK 中运用的设计模式 "
 subtitle:   "\"别说我是学过设计模式的\""
 date:       2018-03-19 12:00:00
 author:     "Gordon"
