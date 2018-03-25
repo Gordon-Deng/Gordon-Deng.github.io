@@ -2,14 +2,16 @@
 layout:     post
 title:      "基于改进型 TF-IDF 微博 特征提取 "
 subtitle:   "\"特征提取\""
-date:       2018-03-22 12:00:00
+date:       2018-03-23 12:00:00
 author:     "Gordon"
-header-img: "img/in-post/2018-03-22-tf/tf-bg.png"
+header-img: "img/in-post/2018-03-07-collection/collection-bg.png"
 catalog: true
 tags:
     - Java
     - ML
 ---
+
+![](/img/in-post/2018-03-22-tf/tf-bg.png)
 
 ## 输入
 一个包含少量与目标事件相关的信息与大量其他非相关信息的微博评论数据
