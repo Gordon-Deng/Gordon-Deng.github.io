@@ -4,7 +4,7 @@ title:      "基于改进型 TF-IDF 微博 特征提取 "
 subtitle:   "\"特征提取\""
 date:       2018-03-23 12:00:00
 author:     "Gordon"
-header-img: "img/in-post/2018-03-07-collection/collection-bg.png"
+header-img: "img/in-post/2018-03-22-tf/tf-bg.jpg"
 catalog: true
 tags:
     - Java
