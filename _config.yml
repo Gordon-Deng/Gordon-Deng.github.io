@@ -87,7 +87,7 @@ service-worker: true
 # Friends
 friends: [
 {
-title: xuyang,
+title: Xuyang,
 href: "http://blog.csdn.net/xu_xyy"
 },
 {
@@ -95,12 +95,16 @@ title: Markdown,
 href: "https://www.zybuluo.com"
 },
 {
-title: 崔庆才爬虫,
-href: "http://cuiqingcai.com"
+title: Programcreek,
+href: "https://www.programcreek.com"
 },
 {
-title: programcreek,
-href: "https://www.programcreek.com"
+title: LeetCodeAnimation,
+href: "https://www.cxyxiaowu.com"
+},
+{
+title: 崔庆才爬虫,
+href: "http://cuiqingcai.com"
 }
 ]
 
