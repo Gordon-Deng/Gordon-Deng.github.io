@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "商务英语邮件范式 - 积极&明确"
-subtitle:   "\"Business Writing\""
+title:      "商务英语邮件范式"
+subtitle:   "\"Business Writing - 积极&明确\""
 date:       2019-06-16 00:00:00
 author:     "Gordon"
 header-img: "img/in-post/2019-06-16-business-writing/business-writing-bg.jpg"
