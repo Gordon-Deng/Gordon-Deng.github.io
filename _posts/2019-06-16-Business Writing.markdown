@@ -15,10 +15,7 @@ tags:
 
 ## 写在前面
 
-> * 原文地址：[Business Writing](https://fuyangzhen.github.io/2018/06/23/Business-Writing/)
-> * 作者：[Young](http://fuyangzhen.github.io)
-
-无论是什么语言，亦或是使用什么途径，沟通最根本的目的是让双方能快速准确得交换信息。
+> 无论是什么语言，亦或是使用什么途径，沟通最根本的目的是让双方能快速准确得交换信息。
 
 ## 关键字
 * 积极
