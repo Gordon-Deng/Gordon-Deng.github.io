@@ -17,6 +17,11 @@ tags:
 * [页面置换算法](http://blog.csdn.net/u011080472/article/details/51206332)
 * [作业调度算法](http://c.biancheng.net/cpp/html/2595.html)
 * [线程进程区别](http://blog.csdn.net/yanxiaolx/article/details/51763372)
+* [进程线程协程之间的联系和区别](https://blog.csdn.net/WJWFighting/article/details/82589177)
+* [内存布局：栈，堆，BSS段(静态区)，代码段，数据段](https://www.cnblogs.com/Spider-spiders/p/8884729.html) 
+* [内核态与用户态](http://swiftlet.net/archives/2211) 
+* [为什么用户态和内核态的切换耗费时间](https://blog.csdn.net/JH_Zhai/article/details/79861169)
+* [为什么系统调用比普通的函数调用更耗时？用户态和内核态切换的代价在哪](https://segmentfault.com/q/1010000000522752)
 
 ## 计算机网络
 * [七层模型](https://www.cnblogs.com/lemo-/p/6391095.html)
@@ -42,13 +47,6 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 * [http、RPC基础](http://blog.csdn.net/xlgen157387/article/details/53543009)
 * [TCP打开/关闭](http://blog.csdn.net/wdscq1234/article/details/52422657)
 
-## 数据结构
-* [链表常规操作](http://blog.csdn.net/kangaroo_07/article/details/77726071)
-* [环链判定](http://blog.csdn.net/u010098159/article/details/44956621)
-* [二叉树](http://blog.csdn.net/fengrunche/article/details/52305748)
-* [B树（结合数据库索引、存储）](http://blog.csdn.net/wwh578867817/article/details/50493940)
-* 红黑树几乎没涉及
-
 ## 数据库
 * [四大特性](https://www.jianshu.com/p/b0d0c0b04fb7)
  - [原子性](http://blog.sina.com.cn/s/blog_70555f1701017kw7.html)
@@ -70,6 +68,16 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
         * 使用多路 I/O 复用模型
 * Nginx：多进程单线程模型
 * 机房备份之类的就是比较常用的，但是很简单的，实际生产很常用。
+
+## 计算机组成原理
+* [内存、cache和寄存器之间的关系及区别](https://blog.csdn.net/happybruce8023/article/details/79957439)
+
+## 数据结构
+* [链表常规操作](http://blog.csdn.net/kangaroo_07/article/details/77726071)
+* [环链判定](http://blog.csdn.net/u010098159/article/details/44956621)
+* [二叉树](http://blog.csdn.net/fengrunche/article/details/52305748)
+* [B树（结合数据库索引、存储）](http://blog.csdn.net/wwh578867817/article/details/50493940)
+* 红黑树几乎没涉及
 
 ## 常见算法
 * 排序
