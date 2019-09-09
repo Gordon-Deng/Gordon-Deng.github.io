@@ -24,6 +24,7 @@ tags:
 * [为什么系统调用比普通的函数调用更耗时？用户态和内核态切换的代价在哪](https://segmentfault.com/q/1010000000522752)
 
 ## 计算机网络
+* [一些有的没的](https://www.cnblogs.com/inception6-lxc/p/9152691.html)
 * [七层模型](https://www.cnblogs.com/lemo-/p/6391095.html)
 * [三次握手](https://www.zhihu.com/question/24853633)
 
@@ -46,6 +47,7 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 * [get和post区别](https://www.cnblogs.com/longm/p/7205318.html?utm_source=itdadao&utm_medium=referral)
 * [http、RPC基础](http://blog.csdn.net/xlgen157387/article/details/53543009)
 * [TCP打开/关闭](http://blog.csdn.net/wdscq1234/article/details/52422657)
+* [http]()
 
 ## 数据库
 * [四大特性](https://www.jianshu.com/p/b0d0c0b04fb7)
