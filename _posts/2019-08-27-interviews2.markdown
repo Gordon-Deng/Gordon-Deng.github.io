@@ -47,7 +47,6 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 * [get和post区别](https://www.cnblogs.com/longm/p/7205318.html?utm_source=itdadao&utm_medium=referral)
 * [http、RPC基础](http://blog.csdn.net/xlgen157387/article/details/53543009)
 * [TCP打开/关闭](http://blog.csdn.net/wdscq1234/article/details/52422657)
-* [http]()
 
 ## 数据库
 * [四大特性](https://www.jianshu.com/p/b0d0c0b04fb7)
