@@ -67,8 +67,25 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
         * 完全基于内存
         * 数据结构简单，对数据操作也简单
         * 使用多路 I/O 复用模型
-* Nginx：多进程单线程模型
-* 机房备份之类的就是比较常用的，但是很简单的，实际生产很常用。
+        * Nginx：多进程单线程模型
+        * 机房备份之类的就是比较常用的，但是很简单的，实际生产很常用。
+* [Mysql的唯一性索引unique](https://www.cnblogs.com/hongdada/p/9970176.html)
+* Mysql REPLACE INTO
+	* [主从不一致和丢非指定列数据的问题](https://www.cnblogs.com/joeblackzqq/p/4702933.html) 
+	* [先删后插的原子性怎么保证](https://blog.csdn.net/hxpjava1/article/details/79407961)  
+	  在MySQL5.6.6之前的版本，REPLACE影响分区表就像MyISAM使用表级锁锁住所有的分区表一样。当使用 REPLACE ... PARTITION语句时确实会发生上述情况。(使用基于行锁的InnoDB引起不会发生这种情况。)在MySQL 5.6.6以后的版本MySQL使用分区锁，只有当分区(只要没有分区表的列更新)包含了REPLACE语句并且WHERE实际匹配到的才会锁住那个分区;否则的话就会锁住整个表。
+	  * 表级锁  
+	  MyISAM在执行查询语句（SELECT）前，会自动给涉及的所有表加读锁，在执行更新操作（UPDATE、DELETE、INSERT等）前，会自动给涉及的表加写锁，这个过程并不需要用户干预  
+	  
+	 	 优化  
+	 	 
+	  （1）查询表级锁争用情况
+	  （2）缩短锁定时间
+	  （3）分离能并行的操作
+	  （4）合理利用读写优先级
+	  
+	  * 分区锁  
+	  
 
 ## 计算机组成原理
 * [内存、cache和寄存器之间的关系及区别](https://blog.csdn.net/happybruce8023/article/details/79957439)
