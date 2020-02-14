@@ -86,8 +86,8 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 	  
 	  * 分区锁  
 * [聚簇索引与非聚簇索引](https://www.jianshu.com/p/fa8192853184)
+* [因为查询优化器所导致的索引失效](https://blog.csdn.net/Wake_me_Up123/article/details/81333857)
 * [索引与慢查询优化](https://www.cnblogs.com/webc/articles/10771404.html)
-* 
 	  
 
 ## 计算机组成原理
