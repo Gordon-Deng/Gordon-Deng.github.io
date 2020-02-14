@@ -69,6 +69,9 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
         * 使用多路 I/O 复用模型
         * Nginx：多进程单线程模型
         * 机房备份之类的就是比较常用的，但是很简单的，实际生产很常用。
+* [Mysql 执行流程](https://blog.csdn.net/zhaohong_bo/article/details/90175759)
+* [Mysql 执行流程2](https://blog.csdn.net/eternal_yangyun/article/details/100562304)
+* [MySQL中Redo 和 Binlog 顺序一致性问题](https://blog.csdn.net/huangjw_806/article/details/100927097)
 * [Mysql的唯一性索引unique](https://www.cnblogs.com/hongdada/p/9970176.html)
 * Mysql REPLACE INTO
 	* [主从不一致和丢非指定列数据的问题](https://www.cnblogs.com/joeblackzqq/p/4702933.html) 
@@ -87,6 +90,7 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 	  * 分区锁  
 * [聚簇索引与非聚簇索引](https://www.jianshu.com/p/fa8192853184)
 * [因为查询优化器所导致的索引失效](https://blog.csdn.net/Wake_me_Up123/article/details/81333857)
+* [查询优化器原理](https://blog.csdn.net/weixin_33878457/article/details/89544606)
 * [索引与慢查询优化](https://www.cnblogs.com/webc/articles/10771404.html)
 	  
 
