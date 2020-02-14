@@ -72,7 +72,7 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 * [Mysql的唯一性索引unique](https://www.cnblogs.com/hongdada/p/9970176.html)
 * Mysql REPLACE INTO
 	* [主从不一致和丢非指定列数据的问题](https://www.cnblogs.com/joeblackzqq/p/4702933.html) 
-	* [先删后插的原子性怎么保证](https://blog.csdn.net/hxpjava1/article/details/79407961)  
+	* [MySQL索引和优化](https://blog.csdn.net/hxpjava1/article/details/79407961)  
 	  在MySQL5.6.6之前的版本，REPLACE影响分区表就像MyISAM使用表级锁锁住所有的分区表一样。当使用 REPLACE ... PARTITION语句时确实会发生上述情况。(使用基于行锁的InnoDB引起不会发生这种情况。)在MySQL 5.6.6以后的版本MySQL使用分区锁，只有当分区(只要没有分区表的列更新)包含了REPLACE语句并且WHERE实际匹配到的才会锁住那个分区;否则的话就会锁住整个表。
 	  * 表级锁  
 	  MyISAM在执行查询语句（SELECT）前，会自动给涉及的所有表加读锁，在执行更新操作（UPDATE、DELETE、INSERT等）前，会自动给涉及的表加写锁，这个过程并不需要用户干预  
@@ -85,6 +85,9 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 	  （4）合理利用读写优先级
 	  
 	  * 分区锁  
+* [聚簇索引与非聚簇索引](https://www.jianshu.com/p/fa8192853184)
+* [索引与慢查询优化](https://www.cnblogs.com/webc/articles/10771404.html)
+* 
 	  
 
 ## 计算机组成原理
@@ -103,10 +106,29 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 * [top K问题](http://blog.csdn.net/Healist/article/details/56928503)
 
 ## linux
+* [cpu load过高问题排查](https://www.cnblogs.com/lddbupt/p/5779655.html)
 * [chmod](http://www.runoob.com/linux/linux-comm-chmod.html)
 * [top](http://www.runoob.com/linux/linux-comm-top.html) 
 * [grep](http://man.linuxde.net/grep)
 * [基本问题](http://blog.csdn.net/zhang_guyuan/article/details/60467007)
+* [Linux服务器的负载情况](https://blog.csdn.net/helloxiaozhe/article/details/78101312)
+* [一次 Java 内存泄漏的排查](https://blog.csdn.net/Y0Q2T57s/article/details/88549030)
+* [Linux top free df三连](https://www.jianshu.com/p/e1041424cd97)
+	* top: U看指定用户，P按CPU排序，M按内存排序,MAC下是输入o再输入键
+	* 
+* 请问当用户反馈网站访问慢，你会如何处理？
+	* 1、服务器出口带宽不够用
+		* 本身服务器购买的出口带宽比较小。一旦并发量大的话，就会造成分给每个用户的出口带宽就小，访问速度自然就会慢。
+		* 跨运营商网络导致带宽缩减。例如，公司网站放在电信的网络上，那么客户这边对接是长城宽带或联通，这也可能导致带宽的缩减。
+	* 2、服务器负载过大，导致响应不过来  
+	可以从两个方面入手分析：
+		* 分析系统负载，使用 w 命令或者 uptime 命令查看系统负载。如果负载很高，则使用 top 命令查看 CPU ，MEM 等占用情况，要么是 CPU 繁忙，要么是内存不够。
+		* 如果这二者都正常，再去使用 sar 命令分析网卡流量，分析是不是遭到了攻击。一旦分析出问题的原因，采取对应的措施解决，如决定要不要杀死一些进程，或者禁止一些访问等。
+	* 3、数据库瓶颈
+		* 如果慢查询比较多。那么就要开发人员或 DBA 协助进行 SQL 语句的优化。
+		* 如果数据库响应慢，考虑可以加一个数据库缓存，如 Redis 等。然后，也可以搭建 MySQL 主从，一台 MySQL 服务器负责写，其他几台从数据库负责读。
+	* 4、网站开发代码没有优化好  
+	例如 SQL 语句没有优化，导致数据库读写相当耗时。
 
 ## [jvm](http://raising.iteye.com/blog/2377709)
 * [分区](http://www.blogjava.net/abin/archive/2013/11/09/406159.html)
@@ -172,12 +194,16 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 * [synchronized和volatile](http://blog.csdn.net/ztchun/article/details/60778950)
 * [可重入锁](https://www.cnblogs.com/dj3839/p/6580765.html)
 * [乐观锁的一种实现方式——CAS](http://www.importnew.com/20472.html)
+* [动态代理](https://www.jianshu.com/p/1682ed0d0c16)
+	* JDK不能代理没有接口的方法，CGLIB不能代理final方法
 
 ## spring
 * [ioc加载,和作业很像，有话可以说](https://www.cnblogs.com/chenjunjie12321/p/6124649.html)
 * [aop（反射和动态代理）](http://blog.csdn.net/donggua3694857/article/details/52752503)
 * [注入方式（设值、构造）](http://blog.csdn.net/wu631464569/article/details/51906959)
 * 注解和配置
+* [Transactional实现原理](https://blog.csdn.net/qq_20597727/article/details/84868035)
+* [Transactional源码](https://www.cnblogs.com/chihirotan/p/6739748.html)* [Spring事务回滚原理和方法](https://blog.csdn.net/weixin_44201216/article/details/97397530)
 
 ## 设计模式
 * 单例、工厂必会
