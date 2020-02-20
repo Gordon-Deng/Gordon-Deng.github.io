@@ -92,6 +92,8 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 * [因为查询优化器所导致的索引失效](https://blog.csdn.net/Wake_me_Up123/article/details/81333857)
 * [查询优化器原理](https://blog.csdn.net/weixin_33878457/article/details/89544606)
 * [索引与慢查询优化](https://www.cnblogs.com/webc/articles/10771404.html)
+* [BINLOG](https://blog.csdn.net/lzhcoder/article/details/88814364)
+* [mysql的写入IO流程](https://www.cnblogs.com/drizzle-xu/p/9869406.html)
 	  
 
 ## 计算机组成原理
