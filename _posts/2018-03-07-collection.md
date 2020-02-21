@@ -8,8 +8,6 @@ header-img: "img/in-post/2018-03-07-collection/collection-bg.jpg"
 catalog: true
 tags:
     - Java
-    - Collection
-    - Reprinted Articles
 ---
 
 > * 原文地址：[java提高篇-集合大家族](http://cmsblogs.com/?p=106)

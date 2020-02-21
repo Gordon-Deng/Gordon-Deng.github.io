@@ -7,7 +7,7 @@ author:     "Gordon"
 header-img: "img/in-post/2018-02-24-interviews2/interviews2-bg.jpg"
 catalog: true
 tags:
-    - Grow
+    - Life
 ---
 
 > 依旧相信每个人的精力和时间是有限的，但我更愿意相信我可以做好这一些。

@@ -8,7 +8,7 @@ header-img: "img/in-post/2018-02-26-redis/redis-bg.png"
 catalog: true
 tags:
     - Java
-    - redis
+    - Redis
 ---
 
 ### [Redis官方](https://redis.io)：

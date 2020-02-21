@@ -8,8 +8,6 @@ header-img: "img/in-post/2018-03-12-hashmap-resize/hashmap-resize-bg.jpg"
 catalog: true
 tags:
     - Java
-    - HashMap
-    - Collection
 ---
 
 ## 哦？

@@ -7,7 +7,7 @@ author:     "Gordon"
 header-img: "img/in-post/2018-03-02-load-balance/load-balance-bg.jpg"
 catalog: true
 tags:
-    - Java Web
+    - Java
     - Server
 ---
 

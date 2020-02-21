@@ -7,8 +7,7 @@ author:     "Gordon"
 header-img: "img/in-post/2019-06-18-30days-challenge/30days-challenge-bg.jpg"
 catalog: true
 tags:
-    - 生活
-
+    - Life
 ---
 
 

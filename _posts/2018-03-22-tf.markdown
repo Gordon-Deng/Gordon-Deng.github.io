@@ -7,8 +7,8 @@ author:     "Gordon"
 header-img: "img/in-post/2018-03-22-tf/tf-bg.jpg"
 catalog: true
 tags:
-    - Java
-    - ML
+    - School
+    - Machine Learning
 ---
 
 ![](/img/in-post/2018-03-22-tf/tf-bg.png)
