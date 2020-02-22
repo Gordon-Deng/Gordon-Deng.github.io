@@ -53,6 +53,7 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
  - [原子性](http://blog.sina.com.cn/s/blog_70555f1701017kw7.html)
 * [mybatis](https://www.w3cschool.cn/mybatis/)
 * [hibernate](https://www.zhihu.com/question/21104468)（pojo、映射…）
+* [为什么MySQL数据库索引选择使用B+树？](https://www.cnblogs.com/tiancai/p/9024351.html)
 * [读写分离](http://blog.csdn.net/justdb/article/details/17331569)，非常常用
 * [服务器负载均衡](https://www.cnblogs.com/xrq730/p/5154340.html)（随机、轮询、活跃度调用、一致性哈希）
    * [一致性哈希](http://blog.csdn.net/gerryke/article/details/53939212)
