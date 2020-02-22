@@ -738,7 +738,7 @@ volatile作用
 volatile实现原理
 
 网站
-http://ifeve.com/volatile/（涉及到汇编）
+[Volatile的使用优化，涉及到汇编](http://ifeve.com/volatile/)
 https://www.cnblogs.com/paddix/p/5428507.html
 
 可见性实现
