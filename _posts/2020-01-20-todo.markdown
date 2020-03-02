@@ -1,0 +1,26 @@
+---
+layout:     post
+title:      "近期的一些规划"
+subtitle:   "\"一切都是为了做个不后悔的自己\""
+date:       2020-01-01 5:00:00
+author:     "Gordon"
+header-img: "img/in-post/2020-01-20-todo/todo-bg.jpg"
+catalog: true
+tags:
+    - Life
+---
+
+> 追了一节关于做事的Ted Talk演讲，觉得不错，今后无论是自省还是思考自己做事的价值都可以参考这个标准。
+
+放在自身从事的这个行业，STAR原则也可以简单总结为：
+
+1. 找到痛点（别做没有产品意识和业务价值的工具人式程序员）
+2. 模型抽象和细分模块（系统架构设计）
+3. 行动力（出方案和解决问题能力）
+4. 结果论（预期与现实的匹配度，实现的价值）
+
+![](img/in-post/2020-01-20-todo/STAR1.png)
+
+![](img/in-post/2020-01-20-todo/STAR2.png)
+
+![](img/in-post/2020-01-20-todo/STAR3.png)
