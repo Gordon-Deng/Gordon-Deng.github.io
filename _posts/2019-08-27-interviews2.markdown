@@ -214,6 +214,9 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 * [Transactional实现原理](https://blog.csdn.net/qq_20597727/article/details/84868035)
 * [Transactional源码](https://www.cnblogs.com/chihirotan/p/6739748.html)* [Spring事务回滚原理和方法](https://blog.csdn.net/weixin_44201216/article/details/97397530)
 
+## 安全
+
+
 ## 设计模式
 * 单例、工厂必会
 * 观察者装饰器

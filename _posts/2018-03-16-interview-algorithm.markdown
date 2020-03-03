@@ -370,3 +370,22 @@ public class TestBinTree {
 
 
 ## 贪心算法
+
+## 小技巧
+
+### 没有辅助堆栈 / 数组的帮助下 “弹出” 和 “推入” 数字
+
+这种方法有点危险，因为当 `text{temp} = text{rev} cdot 10 + text{pop}temp=rev⋅10+pop` 时会导致溢出`int最大值是2147483647，最小值是-2147483648 -> [−2^31,  2^31 − 1]`
+
+
+````
+//pop operation:
+pop = x % 10; //取末尾数字，读操作
+x /= 10;  //去除末尾数字，写操作
+
+//push operation:
+temp = rev * 10 + pop; //进位，写操作
+rev = temp; //数字更新，写操作
+````
+
+
