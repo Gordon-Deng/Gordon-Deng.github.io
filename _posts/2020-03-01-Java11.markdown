@@ -1,0 +1,19 @@
+---
+layout:     post
+title:      "Java 11 升级与学习之旅：值得去拥抱和熟悉"
+subtitle:   "\"OpenJDK LTS版本，这就很牛逼了\""
+date:       2020-03-01 5:00:00
+author:     "Gordon"
+header-img: "img/in-post/2020-03-01-java11/java11-bg.jpg"
+catalog: true
+tags:
+    - Java
+---
+
+#升级之旅
+
+#改动点
+
+#总结
+
+
