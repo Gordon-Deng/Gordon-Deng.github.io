@@ -10,10 +10,178 @@ tags:
     - Java
 ---
 
+本来并不是很在意JDK11的发布的，毕竟当时以为是一次普通的迭代，也就例行公事般看了一下文档,比较了一下JEP（JDK Enhancement Proposals，JDK 增强提案），仅此而已，但直接忽略了这个版本是LTS版本，也就是长期支持版（LTS, Long-Term-Support）
+
+> 文档在这里 -> https://docs.oracle.com/en/java/javase/11/
+
+距离现在已经过去了一年时间，貌似也就对此也是不温不火的，整体使用的面说实话还是特别窄，但LTS这几个字本身已经很能说明一件事，就算现在不用，以后还是存在广泛使用的潜力，所以，升级一事不急但很重要，值得去拥抱和熟悉
+
+本着菜鸡不想菜的原则，还是就新科技的契机让自己多学点东西吧，自己还还是不太愿意让“调包侠”、“工具人”、“施工队”这些tag贴在自己身上，借自己之前认识的一位师兄的话：
+
+> **你可能不太能清楚你想变成什么样的人，但你应该清楚，你不愿意变成什么样的人。**
+
 # 升级之旅
+
+主流程大致说一下，但不是本文的重点，而且也不值得赘述，大多都是`报Exception -> 定位代码位置 -> 看文档 -> 找替代组件和命令 -> 再部署 -> 再测试 -> loop`:
+
+1. 运行环境升级，更新Java SE 11.0.6为指定JDK版本，修改本地环境APP-META目录中dockerfile，这里有个小坑：dockerfile编译时，老是识别不了JDK11，然后我通过暴力法，直接移除Java目录，再软连接过去新的安装包解决
+
+	```
+	rm -rf /opt/"Java目录" && ln -s /opt/install/"new JDK包" /opt/"Java目录"
+	```
+
+2. 构建插件升级，pom中引入maven的11包    
+
+	```
+	<maven.compiler.target>11</maven.compiler.target>
+	<maven.compiler.source>11</maven.compiler.source>
+	```
+3. 框架升级，springboot和sar包的升级    
+
+	```
+	springboot 1.5.22.RELEASE/2.1.8.RELEASE
+	```
+	
+4. 依赖升级，需求手动升级依赖来适配一些已经移除的模块
+
+	![](img/in-post/2020-03-01-java11/java11-1.jpg)
+	
+5. 日志脚本等运行脚本升级
+
+	比如java9以前的GC日志打印是：
+	
+	```
+	-Xloggc:${MIDDLEWARE_LOGS}/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps"
+	```
+	
+	Java9-11以后就是：
+	
+	```
+	-Xlog:gc*:${MIDDLEWARE_LOGS}/gc.log:time"
+	```
+
+
+### Base64编码小插曲
+
+![](img/in-post/2020-03-01-java11/java11-2.jpg)
+
+
+原代码中，一直用的是sun.misc.BASE64Decoder/BASE64Encoder,因为这两个类不是官方类,之前就没怎么在意，但升级完JDK11后，该包已不被支持，所以我直接换成了java自带的java.util.Base64，这就出问题了~ 
+
+先贴两张图就知道了
+
+
+![sun.misc.BASE64Decoder](img/in-post/2020-03-01-java11/java11-3.jpg)
+
+
+![java.util.Base64](img/in-post/2020-03-01-java11/java11-4.jpg)
+
+**发现了么，换行符！！！！！**
+
+看JDK8对该Base64类的注解，这里笔者升级后的JDK11中该类没变，沿用了之前8的Base类，一模一样滴~
+
+```
+/**
+ * This class consists exclusively of static methods for obtaining
+ * encoders and decoders for the Base64 encoding scheme. The
+ * implementation of this class supports the following types of Base64
+ * as specified in
+ * <a href="http://www.ietf.org/rfc/rfc4648.txt">RFC 4648</a> and
+ * <a href="http://www.ietf.org/rfc/rfc2045.txt">RFC 2045</a>.
+ *
+ * <ul>
+ * <li><a name="basic"><b>Basic</b></a>
+ * <p> Uses "The Base64 Alphabet" as specified in Table 1 of
+ *     RFC 4648 and RFC 2045 for encoding and decoding operation.
+ *     The encoder does not add any line feed (line separator)
+ *     character. The decoder rejects data that contains characters
+ *     outside the base64 alphabet.</p></li>
+ ...
+ * @author  Xueming Shen
+ * @since   1.8
+ */
+```
+
+大意是说：
+
+> 这个类包含了base64编码格式的编码方法和解码方法，而且实现是按照rfc4648和rfc2045两个协议来实现的。
+编码和解码操作是照着两个协议中的'Table 1'中指定的'The Base64 Alphabet'来的。编码器不会添加任何换行符，解码器只会处理'The Base64 Alphabet'范围内的数据，如果不在这个范围内，解码器会拒绝处理。
+
+
+而Table 1长这样：
+
+![Table 1并不包含换行符，这就可以解释为什么jdk8无法解码包含换行的编码结果。](img/in-post/2020-03-01-java11/java11-5.png)
+
+再回来看看sun.misc.BASE64Decoder中的解释
+
+```
+   The output stream (encoded bytes) must be represented in lines of no
+      more than 76 characters each.  All line breaks or other characters
+      not found in Table 1 must be ignored by decoding software.  In base64
+      data, characters other than those in Table 1, line breaks, and other
+      white space probably indicate a transmission error, about which a
+      warning message or even a message rejection might be appropriate
+      under some circumstances.
+```
+
+大意是说：
+
+> 编码结果的每一行不能超过76个字符；
+解码的字符必须在：Tbale 1（也就是之前提到的the base64 alphabet）、换行符和空白符这个范围内;
+
+这样你就可以知道为啥sun.misc.BASE64Decoder的编码看起来短了不少，因为<font color='red'> 限制了76字符一行而且会自己给你加上换行符</font>
+
+### jacoco关联小插曲
+
+jacoco是指java code coverage，测试代码覆盖率用的，自己用来算自己有没有提交垃圾代码用的，自己原本用的是`0.8.3`版本，这个不支持JDK11，所以就在加载配置调用`Spring的refresh()`方式报IO和IllegalArgument异常
+
+解决的话，挺简单的，升`0.8.5`就好，但当时扫描的时候居然没扫出来不支持。
+
+
+### 配置文件加载异常小插曲
+* 自己买的阿里云学生项目机上编译提交时，一直报`properties文件找不到`
+
+grep过loading file文件目录，确实有点奇怪，这路径没能正确引用我真正放配置的路径，正常来说应该是`/home/admin/test_project/application.properties`
+
+最后抄了别人一手解决方案：直接用maven编译命令来指定
+
+```
+#maven编译命令
+mvn clean install -Dmaven.test.skip -Dautoconfig.userProperties=../application.properties
+```
 
 # 改动点
 
+升级总算是忘了，算算账，看看这家伙改了哪，我只挑我觉得重要的哈~
+
+### 内存优化
+
+java9&10&11中增强了string的底层存储，LATIN1编码的字符串底层存储从原来的char数组变成了byte数据，对于这样指定的字符串的内存使用节省一半，整体内存的节省大概10%（不同应用可能差别比较大）；
+
+▐  HotSpot增强
+
+java9中引入了HotSpotIntrinsicCandidate这个注释，主要是在使用CPU及OS层面的native方法替换java function，达到性能提升，效果会因为平台和硬件不同有差异，目前主要是在一些基础类的一些高频方法中出现该注解；
+
+▐  GC提升
+
+我们目前使用的是CMS垃圾回收器，相当好，我们也用了很长一段时间了，不过CMS随着发展，也暴露出两个问题，一个是面向大内存的回收效率会下降比较明显，同时回收的时长不可控；在后续的Java9中的G1和Java11中ZGC相继出现，就是针对上述两个方向进行的优化；
+ 
+升级了Java11，其实不一定要用ZGC，因为目前我们大部分应用的配置是4c8g，有人做过性能测试，在8G以下，CMS的回收性能会比ZGC还好一点，8G的情况下差不多，那么8G以上，ZGC会的性能会比较好，同时他的回收效率受内存大小的持续上升影响较小；目前我们有些核心应用的配置是8c16G的，所以这块GC的增强还是有收益的；
+
+
+### FaaS化
+
+FaaS最近一段时间都是一个蛮热的话题，不过距离整体在现有业务场景中广泛应用，还有一段时间；那升级java11和faas化有什么关联呢？
+
+个人感觉是两个方面：
+
+1. 模块化
+2. graalVM；
+ 
+FaaS要支持在线业务的核心关键在于Function的快速分发、运行环境快速拉起来达到低延迟反馈，所以模块化可以让应用足够小，graalVM可以提前将非动态java代码编译成native image，提升启动速度同时减少整体app的大小；
+
 # 总结
+
+升级一堆坑，好处目前还看不到，GC那些又不敢在生产中乱用，但素，有些事必须得做是吧~我觉得和现在的AI有点点像，虽然变现不是那么牛逼，落地也不是那么牛逼，但谁都不想被落下，或者说谁敢被落下~
 
 
