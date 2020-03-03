@@ -44,7 +44,7 @@ tags:
 	
 4. 依赖升级，需求手动升级依赖来适配一些已经移除的模块
 
-	![](img/in-post/2020-03-01-java11/java11-1.jpg)
+	![](/img/in-post/2020-03-01-java11/java11-1.jpg)
 	
 5. 日志脚本等运行脚本升级
 
@@ -63,7 +63,7 @@ tags:
 
 ### Base64编码小插曲
 
-![](img/in-post/2020-03-01-java11/java11-2.jpg)
+![](/img/in-post/2020-03-01-java11/java11-2.jpg)
 
 
 原代码中，一直用的是sun.misc.BASE64Decoder/BASE64Encoder,因为这两个类不是官方类,之前就没怎么在意，但升级完JDK11后，该包已不被支持，所以我直接换成了java自带的java.util.Base64，这就出问题了~ 
@@ -71,10 +71,10 @@ tags:
 先贴两张图就知道了
 
 
-![sun.misc.BASE64Decoder](img/in-post/2020-03-01-java11/java11-3.jpg)
+![sun.misc.BASE64Decoder](/img/in-post/2020-03-01-java11/java11-3.jpg)
 
 
-![java.util.Base64](img/in-post/2020-03-01-java11/java11-4.jpg)
+![java.util.Base64](/img/in-post/2020-03-01-java11/java11-4.jpg)
 
 **发现了么，换行符！！！！！**
 
@@ -110,7 +110,7 @@ tags:
 
 而Table 1长这样：
 
-![Table 1并不包含换行符，这就可以解释为什么jdk8无法解码包含换行的编码结果。](img/in-post/2020-03-01-java11/java11-5.png)
+![Table 1并不包含换行符，这就可以解释为什么jdk8无法解码包含换行的编码结果。](/img/in-post/2020-03-01-java11/java11-5.png)
 
 再回来看看sun.misc.BASE64Decoder中的解释
 
