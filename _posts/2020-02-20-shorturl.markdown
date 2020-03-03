@@ -11,18 +11,18 @@ tags:
 ---
 
 
-#知乎结合博客摘抄
+# 知乎结合博客摘抄
 知乎原理
 [1](https://www.zhihu.com/question/29270034)
 
 博客流程图和第二种方法
 [2](https://hufangyun.com/2017/short-url/)
 
-#301 和302区别与扩展
+# 301 和302区别与扩展
 区别和原理
 
 分析302 重定向所造成的网址URL劫持现象和业界解决方法
 
-#10转62代码
+# 10转62代码
 [代码](https://www.cnblogs.com/lovewl2/p/10522717.html)
 
