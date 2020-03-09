@@ -206,6 +206,7 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 * [乐观锁的一种实现方式——CAS](http://www.importnew.com/20472.html)
 * [动态代理](https://www.jianshu.com/p/1682ed0d0c16)
 	* JDK不能代理没有接口的方法，CGLIB不能代理final方法
+* [Java的Arrays.sort()方法到底用的什么排序算法](https://www.cnblogs.com/baichunyu/p/11935995.html)
 
 ## spring
 * [ioc加载,和作业很像，有话可以说](https://www.cnblogs.com/chenjunjie12321/p/6124649.html)
