@@ -390,4 +390,4 @@ rev = temp; //数字更新，写操作
 
 
 ## 回溯
-[牛客分析](https://leetcode-cn.com/problems/permutations/solution/hui-su-suan-fa-xiang-jie-by-labuladong-2/)
+[全排列问题+N皇后分析回溯](https://leetcode-cn.com/problems/permutations/solution/hui-su-suan-fa-xiang-jie-by-labuladong-2/)
