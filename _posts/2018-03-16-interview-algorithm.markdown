@@ -391,3 +391,22 @@ rev = temp; //数字更新，写操作
 
 ## 回溯
 [全排列问题+N皇后分析回溯](https://leetcode-cn.com/problems/permutations/solution/hui-su-suan-fa-xiang-jie-by-labuladong-2/)
+
+## 递归和DP怎么区分
+递归一般是方法跳进方法里
+
+````
+public string digui(){
+	digui();
+}
+````
+
+DP一般是依赖子结果
+
+````
+public string DP(){
+	for(){
+		dp[i] = dp[i - 1] + dp[i - 2];
+	}
+}
+````
