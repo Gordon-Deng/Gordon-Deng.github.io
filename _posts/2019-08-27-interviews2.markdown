@@ -220,6 +220,11 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 
 ## 安全
 
+## Elasticsearch
+[Elasticsearch 基础介绍及原理分析](https://www.iteye.com/blog/maosheng-2441440)
+[Elasticsearch 查询流程](https://blog.csdn.net/jiankunking/article/details/89202676?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+[Finite State Transducers](https://www.cnblogs.com/jiu0821/p/7688669.html)
+
 
 ## 设计模式
 * 单例、工厂必会
