@@ -221,10 +221,18 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 ## 安全
 
 ## Elasticsearch
-[Elasticsearch 基础介绍及原理分析](https://www.iteye.com/blog/maosheng-2441440)
-[Elasticsearch 查询流程](https://blog.csdn.net/jiankunking/article/details/89202676?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
-[Finite State Transducers](https://www.cnblogs.com/jiu0821/p/7688669.html)
+* [Elasticsearch 基础介绍及原理分析](https://www.iteye.com/blog/maosheng-2441440)
+* [Elasticsearch 查询流程](https://blog.csdn.net/jiankunking/article/details/89202676?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+* [Finite State Transducers](https://www.cnblogs.com/jiu0821/p/7688669.html)
+* [ElasticSearch 优化](https://blog.csdn.net/qq_42046105/article/details/91488572?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+* [HBase + ElasticSearch最佳实践](https://blog.csdn.net/weixin_42257250/article/details/88953967?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
 
+## MQ
+* [保证生产者投递到消息中间件的消息不丢失](https://mp.weixin.qq.com/s?__biz=MzU0OTk3ODQ3Ng==&mid=2247484377&idx=1&sn=373832e0d050bb0618448f4403f02f2a&chksm=fba6ebdaccd162cca4a26199554cbfbc37c4aec56fe54c3864a0a9cfc3255884ed212512e5cd&scene=21#wechat_redirect)
+	* 1.消息持久化
+	* 2.ACK确认机制
+	* 3.设置集群镜像模式
+	* 4.消息补偿机制 
 
 ## 设计模式
 * 单例、工厂必会
