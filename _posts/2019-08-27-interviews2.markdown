@@ -234,7 +234,7 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 	* 2.ACK确认机制
 	* 3.设置集群镜像模式
 	* 4.消息补偿机制 
-
+* [MQ消息的投递机制](https://blog.csdn.net/luanlouis/article/details/91368332)
 ## 设计模式
 * 单例、工厂必会
 * 观察者装饰器
