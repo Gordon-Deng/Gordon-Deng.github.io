@@ -235,6 +235,12 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 	* 3.设置集群镜像模式
 	* 4.消息补偿机制 
 * [MQ消息的投递机制](https://blog.csdn.net/luanlouis/article/details/91368332)
+
+## Redis
+[Redis基础](https://juejin.im/post/5db66ed9e51d452a2f15d833)
+[Redis用途-缓存雪崩、击穿、穿透](https://juejin.im/post/5dbef8306fb9a0203f6fa3e2)
+[当你输入get/set命令的时候，Redis做了什么](https://segmentfault.com/a/1190000015246793)
+
 ## 设计模式
 * 单例、工厂必会
 * 观察者装饰器
