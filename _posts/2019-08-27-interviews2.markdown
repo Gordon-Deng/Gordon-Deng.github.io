@@ -220,6 +220,12 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 
 ## 安全
 
+## 解决问题方法
+* [如何评估线程池中的核心线程池个数的大小](https://blog.csdn.net/Alice_8899/article/details/103890069?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+	* 可以谈到自己去深海的实习，CPU密集，就少线程
+
+
+
 ## Elasticsearch
 * [Elasticsearch 入门](https://www.zhihu.com/question/323811022/answer/981341195)
 * [Elasticsearch 基础介绍及原理分析](https://www.iteye.com/blog/maosheng-2441440)
