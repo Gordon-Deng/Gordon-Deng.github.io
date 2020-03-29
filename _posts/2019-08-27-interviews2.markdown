@@ -209,6 +209,18 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 * [动态代理](https://www.jianshu.com/p/1682ed0d0c16)
 	* JDK不能代理没有接口的方法，CGLIB不能代理final方法
 * [Java的Arrays.sort()方法到底用的什么排序算法](https://www.cnblogs.com/baichunyu/p/11935995.html)
+* [Java线程池](https://www.cnblogs.com/CarpenterLee/p/9558026.html)
+	* 任务由execute方法提交到线程池中调度，在提交任务时会有下面几种场景：
+		* 1）线程池中线程数量小于corePoolSize，此时任务不会进等待队列，线程池直接创建一个线程Worker执行提交的任务；
+		* 2）线程池中线程数量不小于corePoolSize并且等待队列未满，任务直接添加到等待队列，等待线程池调度执行；
+		* 3）线程池中线程数量不小于corePoolSize但是等待队列已满且线程数量小于maximumPoolSize，线程池会进行扩容新创建一个线程Worker执行提交的任务，新创建的Worker会被添加到线程集合workers中；
+		* 4）等待队列已满并且线程数量已达到maximumPoolSize，这种情况下线程池无法继续执行任务会拒绝任务，执行一个指定的拒接策略。
+		* 5）线程池已关闭，拒绝任务，执行一个指定的拒接策略。
+
+	线程创建之后，会不停从等待队列workQueue中拉取任务，workQueue是一个线程安全的阻塞队列，所以不存在线程安全问题，拉取到任务之后，执行任务逻辑。拉取任务时有两种情况：
+
+		* 线程池设置了keepAliveTime参数，并且此时线程池中的线程数量超过核心数量corePoolSize，从队列中拉取任务时会设置keepAliveTime为超时时间，超过这个时间之后，该线程不再等待任务，直接跑完run方法体，线程被回收；
+		* 否则线程会无限等待任务队列直到有任务到来。
 
 ## spring
 * [ioc加载,和作业很像，有话可以说](https://www.cnblogs.com/chenjunjie12321/p/6124649.html)
