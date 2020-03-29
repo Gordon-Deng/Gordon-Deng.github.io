@@ -209,6 +209,8 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 * [动态代理](https://www.jianshu.com/p/1682ed0d0c16)
 	* JDK不能代理没有接口的方法，CGLIB不能代理final方法
 * [Java的Arrays.sort()方法到底用的什么排序算法](https://www.cnblogs.com/baichunyu/p/11935995.html)
+
+## 线程池
 * [Java线程池](https://www.cnblogs.com/CarpenterLee/p/9558026.html)
 	* 任务由execute方法提交到线程池中调度，在提交任务时会有下面几种场景：
 		* 1）线程池中线程数量小于corePoolSize，此时任务不会进等待队列，线程池直接创建一个线程Worker执行提交的任务；
@@ -221,6 +223,13 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 
 		* 线程池设置了keepAliveTime参数，并且此时线程池中的线程数量超过核心数量corePoolSize，从队列中拉取任务时会设置keepAliveTime为超时时间，超过这个时间之后，该线程不再等待任务，直接跑完run方法体，线程被回收；
 		* 否则线程会无限等待任务队列直到有任务到来。
+
+* [线程死了后的流程](https://mp.weixin.qq.com/s/wrTVGLDvhE-eb5lhygWEqQ)
+* [缓冲队列BlockingQueue]()
+	* （默认值，无界队列）LinkedBlockingQueue（）或者（int i）:大小不固定的BlockingQueue，若其构造时指定大小，生成的BlockingQueue有大小限制，不指定大小，其大小有Integer.MAX_VALUE来决定。其所含的对象是FIFO顺序排序的。
+	* ArrayBlockingQueue（int i）:规定大小的BlockingQueue，其构造必须指定大小。其所含的对象是FIFO顺序排序的。
+	* PriorityBlockingQueue（）或者（int i）:类似于LinkedBlockingQueue，但是其所含对象的排序不是FIFO，而是依据对象的自然顺序或者构造函数的Comparator决定。
+	* SynchronizedQueue（）:特殊的BlockingQueue，对其的操作必须是放和取交替完成。
 
 ## spring
 * [ioc加载,和作业很像，有话可以说](https://www.cnblogs.com/chenjunjie12321/p/6124649.html)
