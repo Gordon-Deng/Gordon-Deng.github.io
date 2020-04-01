@@ -231,6 +231,7 @@ HashMap在使用put方法时会调用这个方法,具体为addEntry(hash, key, v
 	* PriorityBlockingQueue（）或者（int i）:类似于LinkedBlockingQueue，但是其所含对象的排序不是FIFO，而是依据对象的自然顺序或者构造函数的Comparator决定。
 	* SynchronizedQueue（）:特殊的BlockingQueue，对其的操作必须是放和取交替完成。
 
+
 ## spring
 * [ioc加载,和作业很像，有话可以说](https://www.cnblogs.com/chenjunjie12321/p/6124649.html)
 * [aop（反射和动态代理）](http://blog.csdn.net/donggua3694857/article/details/52752503)
