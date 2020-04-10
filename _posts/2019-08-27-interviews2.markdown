@@ -11,7 +11,7 @@ tags:
     - Interview
 ---
 
-> 我是草鸡，也是垃圾。9
+> 我是草鸡，也是垃圾。8
 
 ## 操作系统
 * [页面置换算法](http://blog.csdn.net/u011080472/article/details/51206332)
