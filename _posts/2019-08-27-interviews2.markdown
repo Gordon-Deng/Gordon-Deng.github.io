@@ -11,7 +11,7 @@ tags:
     - Interview
 ---
 
-> 加油，不拖延
+> 加油，不拖延。
 
 ## 操作系统
 * [页面置换算法](http://blog.csdn.net/u011080472/article/details/51206332)
