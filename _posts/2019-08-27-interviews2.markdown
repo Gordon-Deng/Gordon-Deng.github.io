@@ -19,6 +19,7 @@ tags:
 * [线程进程区别](http://blog.csdn.net/yanxiaolx/article/details/51763372)
 * [进程线程协程之间的联系和区别](https://blog.csdn.net/WJWFighting/article/details/82589177)
 * [内存布局：栈，堆，BSS段(静态区)，代码段，数据段](https://www.cnblogs.com/Spider-spiders/p/8884729.html) 
+* [线程切换](https://zhuanlan.zhihu.com/p/119142215) 
 * [内核态与用户态](http://swiftlet.net/archives/2211) 
 * [为什么用户态和内核态的切换耗费时间](https://blog.csdn.net/JH_Zhai/article/details/79861169)
 * [为什么系统调用比普通的函数调用更耗时？用户态和内核态切换的代价在哪](https://segmentfault.com/q/1010000000522752)
