@@ -55,6 +55,8 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 * [TCP打开/关闭](http://blog.csdn.net/wdscq1234/article/details/52422657)
 * [大小端问题和网络字节序](https://www.cnblogs.com/little-white/p/3236548.html)
 * [RST攻击](https://blog.csdn.net/a_tu_/article/details/80389878)
+* [TCP粘包问题分析和解决（全）](https://www.cnblogs.com/kex1n/p/6502002.html)
+	* TCP没有粘包问题，因为没有包的概念
 
 ## 数据库
 * [四大特性](https://www.jianshu.com/p/b0d0c0b04fb7)
