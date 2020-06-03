@@ -150,7 +150,7 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 
 ## [jvm](http://raising.iteye.com/blog/2377709)
 * [分区](http://www.blogjava.net/abin/archive/2013/11/09/406159.html)
-* [垃圾判定](https://baijiahao.baidu.com/s?id=1589450732159463534&wfr=spider&for=pc)
+* [垃圾判定](https://www.cnblogs.com/godoforange/p/11552865.html)
 * [分代模型](https://www.jianshu.com/p/f6197bfc61b0)
 * [java垃圾回收算法之-标记清除](http://blog.csdn.net/linsongbin1/article/details/51577310)
 * [java垃圾回收算法之-coping复制](http://blog.csdn.net/linsongbin1/article/details/51668859)
