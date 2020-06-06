@@ -123,6 +123,10 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 ![](/img/in-post/2018-02-24-interviews2/suanfa.jpg)
 * [top K问题](http://blog.csdn.net/Healist/article/details/56928503)
 
+## 系统设计题
+* [短链接URL系统设计]()
+* [TopK问题-文本检索系统]()
+
 ## linux
 * [cpu load过高问题排查](https://www.cnblogs.com/lddbupt/p/5779655.html)
 * [chmod](http://www.runoob.com/linux/linux-comm-chmod.html)
