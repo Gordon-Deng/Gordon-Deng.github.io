@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "LCTT-开源贡献者计划开始"
+title:      "LCTT-Linux翻译计划"
 subtitle:   "\"我会回来惹\""
 date:       2021-05-10 5:00:00
 author:     "Gordon"
@@ -10,7 +10,8 @@ tags:
     - Linux
 ---
 
-Hi, 回来了, 开始搞开源了。
+> Hi, 回来了, 开始搞开源了。
 
 今天就加入LCTTQQ群作为开始吧，晚安
 
+入群了，开始翻Wiki
