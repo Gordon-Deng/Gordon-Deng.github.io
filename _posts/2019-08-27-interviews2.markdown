@@ -124,6 +124,19 @@ ESTABLISHED状态，而服务端在收到连接请求后就进入ESTABLISHED状�
 ![](/img/in-post/2018-02-24-interviews2/suanfa.jpg)
 * [top K问题](http://blog.csdn.net/Healist/article/details/56928503)
 
+
+####DP模版
+```
+def helper(self, ns: List[int]) :
+    N = len(ns)
+    dp = [[0] * N for _ in range(N+1)]
+    for l in range(N): # 长度从小到大
+        for i in range(N-l): # 以 i 为 开头
+            j = i + l           # 以 j 为 终点
+            for k in range(i,j): # 以 k 为分割点，进行分治         
+                // Todo 业务逻辑
+```
+
 ## 系统设计题
 * [短链接URL系统设计]()
 * [TopK问题-文本检索系统]()
