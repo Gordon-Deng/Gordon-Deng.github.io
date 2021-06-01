@@ -4,7 +4,7 @@ title:      "聊聊Groovy"
 subtitle:   "\"学学脚本语言第一弹\""
 date:       2021-06-01 5:00:00
 author:     "Gordon"
-header-img: "img/in-post/2020-03-01-java11/java11-bg.jpg"
+header-img: "img/in-post/2021-06-01-groovy/groovy2.jpeg"
 catalog: true
 tags:
     - Script
