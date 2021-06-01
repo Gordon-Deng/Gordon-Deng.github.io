@@ -137,6 +137,15 @@ def helper(self, ns: List[int]) :
                 // Todo 业务逻辑
 ```
 
+####前缀和Python模版
+```
+list(accumulate(数组))
+
+    # accumulate([1,2,3,4,5]) --> 1 3 6 10 15
+    # accumulate([1,2,3,4,5], initial=100) --> 100 101 103 106 110 115
+    # accumulate([1,2,3,4,5], operator.mul) --> 1 2 6 24 120
+```
+
 ## 系统设计题
 * [短链接URL系统设计]()
 * [TopK问题-文本检索系统]()
@@ -165,6 +174,7 @@ def helper(self, ns: List[int]) :
 		* 如果数据库响应慢，考虑可以加一个数据库缓存，如 Redis 等。然后，也可以搭建 MySQL 主从，一台 MySQL 服务器负责写，其他几台从数据库负责读。
 	* 4、网站开发代码没有优化好  
 	例如 SQL 语句没有优化，导致数据库读写相当耗时。
+		* 顺路引出索引
 
 ## [jvm](http://raising.iteye.com/blog/2377709)
 * [分区](http://www.blogjava.net/abin/archive/2013/11/09/406159.html)
