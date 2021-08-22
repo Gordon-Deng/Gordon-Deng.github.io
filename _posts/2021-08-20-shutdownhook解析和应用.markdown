@@ -11,7 +11,23 @@ tags:
 ---
 
 # 前言
+> 最近自己在学习手撸一个RPC，个人认为里面有很多点都是大学问，其中的优雅上下线这块涉及到了Hook的运用，自己刚好可以结合起来一起看看
+
+
 # Hook
+### Hook的原理
+### Hook的应用
+
+# 优雅启动与Hook
+
+
 # Shutdownhook
-# Spring优雅关闭与Shutdownhook的搞事之旅
+### Shutdownhook机制
+### Shutdownhook充当“挡板”原理
+
+# Spring优雅关闭与Shutdownhook
+### 灵魂拷问：当服务提供方关闭前，可以先通知注册中心进行下线，然后通过注册中心告诉调用方进行节点摘除
+
+
+
 
