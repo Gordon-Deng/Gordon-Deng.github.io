@@ -28,6 +28,7 @@ spring
 ### Shutdownhook机制
 ### Shutdownhook充当“挡板”原理
 
+
 ## Spring优雅关闭与Shutdownhook
 ### 灵魂拷问：当服务提供方关闭前，可以先通知注册中心进行下线，然后通过注册中心告诉调用方进行节点摘除
 
