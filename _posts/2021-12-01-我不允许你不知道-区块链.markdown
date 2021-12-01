@@ -1,0 +1,14 @@
+---
+layout:     post
+title:      "《我不允许你不知道》- 区块链"
+subtitle:   "\"我不允许你不知道系列第一篇文章\""
+date:       2021-12-01 5:00:00
+author:     "Gordon"
+header-img: "img/in-post/2020-01-20-todo/todo-bg.jpg"
+catalog: true
+tags:
+    - Java
+---
+
+> 这是《我不允许你不知道》互联网科普知识博文的第一篇
+> 下期预告：《我不允许你不知道》- 互联网供应链
