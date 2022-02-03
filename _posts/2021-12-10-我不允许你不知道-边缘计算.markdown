@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "《我不允许你不知道》- 边缘计算"
+title:      "我不允许你不知道系列 -《边缘计算》"
 subtitle:   "\"算力用在刀刃上\""
 date:       2021-12-10 5:00:00
 author:     "Gordon"
