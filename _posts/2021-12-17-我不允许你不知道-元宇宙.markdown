@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "《我不允许你不知道》- 元宇宙"
+title:      "我不允许你不知道系列 -《元宇宙》"
 subtitle:   "\"风平浪静后总有刁民在拨浪\""
 date:       2021-12-06 5:00:00
 author:     "Gordon"
