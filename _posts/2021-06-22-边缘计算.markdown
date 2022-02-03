@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "翻译计划 -《边缘计算》"
+title:      "翻译计划 -《雾计算》"
 subtitle:   "\"LCTT-第一期\""
 date:       2021-06-22 5:00:00
 author:     "Gordon"
@@ -14,3 +14,4 @@ tags:
 > 原文地址：
 > https://github.com/LCTT/TranslateProject/blob/a524e286b7194da838fa79260c157135613087fd/sources/tech/20210511%20What%20is%20fog%20computing.md
 
+# 
