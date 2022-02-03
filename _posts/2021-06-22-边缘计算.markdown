@@ -1,13 +1,14 @@
 ---
 layout:     post
-title:      "边缘计算"
-subtitle:   "\"Linux翻译计划冲冲冲\""
+title:      "翻译计划 -《边缘计算》"
+subtitle:   "\"Linux翻译计划-LCTT-第一期\""
 date:       2021-06-22 5:00:00
 author:     "Gordon"
 header-img: "img/in-post/2020-03-01-java11/java11-bg.jpg"
 catalog: true
 tags:
     - LCTT
+    - Translation
 ---
 
 
