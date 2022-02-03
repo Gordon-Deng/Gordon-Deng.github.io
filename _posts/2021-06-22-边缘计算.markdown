@@ -11,4 +11,6 @@ tags:
     - Translation
 ---
 
+> 原文地址：
+> https://github.com/LCTT/TranslateProject/blob/a524e286b7194da838fa79260c157135613087fd/sources/tech/20210511%20What%20is%20fog%20computing.md
 
