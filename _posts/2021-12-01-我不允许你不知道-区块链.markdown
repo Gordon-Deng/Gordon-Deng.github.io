@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "《我不允许你不知道》- 区块链"
+title:      "我不允许你不知道系列 -《区块链》"
 subtitle:   "\"我不允许你不知道系列第一篇文章\""
 date:       2021-12-01 5:00:00
 author:     "Gordon"
