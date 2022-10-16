@@ -1,0 +1,15 @@
+---
+layout:     post
+title:      "英语学习之路：吹牛逼也要用英语吹"
+subtitle:   "\"一些重要但不紧急的持续软实力\""
+date:       2022-10-15 5:00:00
+author:     "Gordon"
+header-img: "img/in-post/2020-01-20-todo/todo-bg.jpg"
+catalog: true
+tags:
+    - Grow
+    - English
+---
+
+
+
