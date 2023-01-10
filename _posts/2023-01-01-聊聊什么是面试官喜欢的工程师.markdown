@@ -1,0 +1,16 @@
+---
+layout:     post
+title:      "聊聊什么是面试官喜欢的工程师"
+subtitle:   "\"滑雪累的时候我在想什么系列\""
+date:       2023-01-01 5:00:00
+author:     "Gordon"
+header-img: "img/in-post/2020-01-20-todo/todo-bg.jpg"
+catalog: true
+tags:
+    - Grow
+---
+
+
+> 今天大雪，我在禾木
+
+
