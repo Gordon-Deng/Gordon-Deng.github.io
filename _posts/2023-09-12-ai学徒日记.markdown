@@ -15,7 +15,8 @@ tags:
 - 模拟多种社会实验场景，如NLP课堂、囚徒困境、软件设计等
 🔗详细：github.com/OpenBMB/AgentVerse
 🔗Tweet：twitter.com/xiaohuggg/status/1701234611806691810?s=20
-工业仿真或者家居设计可使用
+
+> 工业仿真或者家居设计可使用
 
 # Meshy.ai
 - 用于3D创意的AI生成工具箱
@@ -23,11 +24,13 @@ tags:
 - 使3D工作流程更加高效
 🔗详细：Meshy.ai
 🔗Tweet：twitter.com/xiaohuggg/status/1701194691973386443?s=20
-怎么感觉最后都是为图像标注做准备。。。
+
+> 怎么感觉最后都是为图像标注做准备。。。
 
 # Stability AI推出AI生成音乐平台：Stable Audio：
 - 描述：输入描述性文本提示和音频长度生成音乐和音效
 - 特点：免费版生成20秒音乐，Pro版可生成90秒
 🔗网站链接：http://stableaudio.com
 🔗推文链接：https://x.com/xiaohuggg/status/1701884386910871953?s=20
-场景非常好，可做成SDK适配一切剪辑软件和短视频平台
+
+> 场景非常好，可做成SDK适配一切剪辑软件和短视频平台
