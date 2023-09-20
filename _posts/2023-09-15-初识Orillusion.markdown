@@ -11,3 +11,13 @@ tags:
 ---
 
 > 初识Duo于23年元旦禾木包机团，知道https://zhuanlan.zhihu.com/p/654934680创业之路坎坷的同时也了解到AIDC与视频x游戏领域的结合，记录一下学习Orillusion过程吧
+> https://github.com/Orillusion/orillusion
+
+# 出现背景
+
+## 关于WebGPU
+
+# see that:https://zhuanlan.zhihu.com/p/650375016
+
+# 核心能力
+# 技术架构
