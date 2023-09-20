@@ -34,3 +34,8 @@ tags:
 🔗推文链接：https://x.com/xiaohuggg/status/1701884386910871953?s=20
 
 > 场景非常好，可做成SDK适配一切剪辑软件和短视频平台
+
+# Google Bard 更新：
+- Bard发布了一个新的AI模型并与其他Google服务集成
+- 新功能：“Google it”功能的优化与扩展，支持40种语言
+🔗详细：https://x.com/xiaohuggg/status/1704103089203249350?s=20
