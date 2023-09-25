@@ -79,3 +79,11 @@ https://x.com/xiaohuggg/status/1704886721912221960?s=20
 
 > maybe后面有用
 
+# GPT-4V(ision) Update：
+- 今天OpenAI发布的模型其实叫GPT-4V(ision)。
+- OpenAI放出了19页的GPT-4V(ision)报告。
+- GPT-4V可以为其500,000名盲人和低视力用户提供前所未有的工具。
+- OpenAI还研究了模型的基于地理位置的能力，以及模型破解CAPTCHA的能力。
+🔗详细：https://cdn.openai.com/papers/GPTV_System_Card.pdf
+
+> 高级地图。。开玩笑了，这个军工yu适用面更广，比如。。daodan制程？
