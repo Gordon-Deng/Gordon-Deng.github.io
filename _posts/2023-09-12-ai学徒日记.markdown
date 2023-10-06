@@ -87,3 +87,13 @@ https://x.com/xiaohuggg/status/1704886721912221960?s=20
 🔗详细：https://cdn.openai.com/papers/GPTV_System_Card.pdf
 
 > 高级地图。。开玩笑了，这个军工yu适用面更广，比如。。daodan制程？
+
+# Manga-Image-Translator：一个开源的漫画图片翻译器
+- 能够自动翻译漫画图像中的文本，当然普通的图片也可以。翻译完成后在图像在原位置替换译文。干净简洁，速度很快。
+- 主要支持日语，汉语、英文和韩语。
+🔗 http://cotrans.touhou.ai
+🔗 https://x.com/xiaohuggg/status/1710264008140619781?s=20
+
+# Google Pixel 8内置的AI功能介绍：
+- 相机相册、音频编辑、视频处理、语音交互、智能呼叫、内容摘要、智能键盘等。
+🔗 https://x.com/xiaohuggg/status/1710166450110087508?s=20
