@@ -100,3 +100,7 @@ https://x.com/xiaohuggg/status/1704886721912221960?s=20
 # Face Swapper：AI换脸工具:
 - 视频领域
 https://icons8.com/swapper
+
+# bigpixel.cn
+- 360视图看世界
+https://bigpixel.cn
