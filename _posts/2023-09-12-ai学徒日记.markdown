@@ -110,3 +110,9 @@ https://bigpixel.cn
 - 基于OpenAI的Whisper Large v3模型改进。
 - 支持多版本和不同配置，目前只支持Nvidia GPU。
 🔗 https://t.co/qBVm8NoeqF
+
+# LCM即时绘画，体验所见所得：
+- LCM LoRA支持即时绘图生成，体验直观。
+- 在线体验地址提供直接访问。
+- 清华大学@SimianLuo开发，加速稳定扩散模型运行。
+🔗 https://huggingface.co/spaces/ilumine-AI/LCM-Painter
