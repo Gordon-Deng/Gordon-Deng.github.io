@@ -104,3 +104,9 @@ https://icons8.com/swapper
 # bigpixel.cn
 - 360视图看世界
 https://bigpixel.cn
+
+# Insanely Fast Whisper：极速音频转录工具：
+- 能在98秒内转录300分钟音频。
+- 基于OpenAI的Whisper Large v3模型改进。
+- 支持多版本和不同配置，目前只支持Nvidia GPU。
+🔗 https://t.co/qBVm8NoeqF
