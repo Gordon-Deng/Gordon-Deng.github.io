@@ -116,3 +116,8 @@ https://bigpixel.cn
 - 在线体验地址提供直接访问。
 - 清华大学@SimianLuo开发，加速稳定扩散模型运行。
 🔗 https://huggingface.co/spaces/ilumine-AI/LCM-Painter
+
+# GPT-Crawler：知识库自动爬虫工具：
+- 爬取网站内容生成JSON文件。
+- 方便创建自定义GPTs知识库。
+🔗 https://github.com/BuilderIO/gpt-crawler
