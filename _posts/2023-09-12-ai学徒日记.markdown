@@ -122,4 +122,33 @@ https://bigpixel.cn
 - 方便创建自定义GPTs知识库。
 🔗 https://github.com/BuilderIO/gpt-crawler
 
-> 同一写爬虫轮子库？
+> 统一写爬虫轮子库？
+
+# Flowty Realtime LCM Canvas：实时草图转图像：
+- 在MacBook上运行的实时草图转图像开源程序。
+- M2 Max配置下每次渲染需1.2秒。
+- 可调整模型ID和参数以优化结果。
+🔗 https://github.com/flowtyone/flowty-realtime-lcm-canvas
+🔗 https://x.com/xiaohuggg/status/1727622388358267384?s=20
+
+# MCVD：通用的视频生成模型：
+- 能创造全新视频、预测未来画面、重建过去画面。
+- 在视频片段之间创造中间画面。
+🔗 https://x.com/xiaohuggg/status/1727609231866773878?s=20
+
+# 更多关于Q*（Q-Star）的信息：
+- 可能具备自主学习、自我改进能力。
+- 可自主决策，或已有轻微自我意识。
+- GPT-Zero项目解决数据生产问题。
+🔗 https://x.com/xiaohuggg/status/1727568964065382411?s=20
+
+# 将网站变成播客/有声读物：
+- 利用OpenAI的TTS语音API。
+- 自动识别网页内容语言并朗读。
+- 目前为Demo测试，需OpenAI API。
+🔗 http://readany.vercel.app
+
+# ElevenLabs推出AI语音转换器：Voice-Changer：
+- 转换不同声音或角色。
+- 控制情感和传递方式。
+🔗 https://x.com/xiaohuggg/status/1727519973718040838?s=20
