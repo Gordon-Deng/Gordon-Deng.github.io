@@ -16,8 +16,10 @@ tags:
 # 出现背景
 
 ## 关于WebGPU
+https://surma.dev/things/webgpu/
 
 # see that:https://zhuanlan.zhihu.com/p/650375016
+
 
 # 核心能力
 # 技术架构
