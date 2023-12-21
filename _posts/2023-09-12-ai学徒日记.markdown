@@ -161,3 +161,4 @@ https://bigpixel.cn
 🔗 https://github.com/tldraw/draw-fast
 
 # 今日无题，学学论文
+![](/img/in-post/2023-09-12-ai/SVD.jpg)
