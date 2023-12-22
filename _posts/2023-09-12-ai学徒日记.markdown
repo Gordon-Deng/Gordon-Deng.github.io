@@ -166,7 +166,7 @@ https://bigpixel.cn
 # OpenAI大模型原理和训练过程
 ![](/img/in-post/2023-09-12-ai/640.png)
 
-DREAM-Talk - 照片说话项目：
+# DREAM-Talk - 照片说话项目：
 - 字节跳动开发，单张图片生成说话面部动画。
 - 支持多种情感表达和多语言。
 🔗 https://magic-research.github.io/dream-talk/
