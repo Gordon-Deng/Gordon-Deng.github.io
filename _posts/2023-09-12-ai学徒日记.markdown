@@ -170,3 +170,9 @@ https://bigpixel.cn
 - 字节跳动开发，单张图片生成说话面部动画。
 - 支持多种情感表达和多语言。
 🔗 https://magic-research.github.io/dream-talk/
+
+# OpenSaaS - 免费开源的SaaS模板：
+- 提供预配置的功能丰富平台，便于构建应用。
+- 包含用户认证、内置博客、支付系统等。
+- 特别适合小型团队和个人开发者。
+🔗 http://opensaas.sh
