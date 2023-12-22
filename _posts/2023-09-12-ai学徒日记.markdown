@@ -165,3 +165,4 @@ https://bigpixel.cn
 
 # OpenAI大模型原理和训练过程
 ![](/img/in-post/2023-09-12-ai/640.png)
+
