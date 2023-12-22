@@ -181,3 +181,6 @@ https://bigpixel.cn
 - 自主学习模仿人类手势，执行多种手机任务。
 - 由腾讯和德州大学达拉斯分校研究团队开发。
 🔗 https://appagent-official.github.io
+
+# MJ 6.0 牛逼。。。。。
+Prompt：Minimalist editorial photo, <人物姓名> portrait. --ar 4:3 --v 5
