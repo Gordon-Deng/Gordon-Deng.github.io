@@ -176,3 +176,11 @@ https://bigpixel.cn
 - 包含用户认证、内置博客、支付系统等。
 - 特别适合小型团队和个人开发者。
 🔗 http://opensaas.sh
+
+# AppAgent - 人类操作模拟AI：
+- 自主学习模仿人类手势，执行多种手机任务。
+- 由腾讯和德州大学达拉斯分校研究团队开发。
+🔗 https://appagent-official.github.io
+
+# MJ 6.0 牛逼。。。。。
+Prompt：Minimalist editorial photo, <人物姓名> portrait. --ar 4:3 --v 5
