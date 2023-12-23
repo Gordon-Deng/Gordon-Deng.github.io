@@ -195,3 +195,9 @@ Prompt：Minimalist editorial photo, <人物姓名> portrait. --ar 4:3 --v 5
 - 根据布局和风格描述设计3D房间模型。
 - 自动调整房间深度和物体表面细节。
 🔗 https://jonasschult.github.io/ControlRoom3D/
+
+# AI视频搜索引擎：
+- 搜索引擎允许用问题查询视频。
+- 可与视频进行互动对话，自动总结内容。
+- 已索引约17245个YouTube视频，计划扩展到TikTok。
+🔗 https://avse.vercel.app
