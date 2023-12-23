@@ -184,3 +184,9 @@ https://bigpixel.cn
 
 # MJ 6.0 牛逼。。。。。
 Prompt：Minimalist editorial photo, <人物姓名> portrait. --ar 4:3 --v 5
+
+# DreamTuner 图像生成工具：
+- 由字节跳动开发，通过单张图片创造主题一致的新图像。
+- 可以将物体置入不同场景或添加元素。
+- 适合创造个性化主题图像。
+🔗 https://dreamtuner-diffusion.github.io
