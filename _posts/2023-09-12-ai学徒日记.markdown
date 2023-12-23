@@ -190,3 +190,8 @@ Prompt：Minimalist editorial photo, <人物姓名> portrait. --ar 4:3 --v 5
 - 可以将物体置入不同场景或添加元素。
 - 适合创造个性化主题图像。
 🔗 https://dreamtuner-diffusion.github.io
+
+# ControlRoom3D 3D房间设计：
+- 根据布局和风格描述设计3D房间模型。
+- 自动调整房间深度和物体表面细节。
+🔗 https://jonasschult.github.io/ControlRoom3D/
