@@ -117,7 +117,7 @@ https://bigpixel.cn
 - 清华大学@SimianLuo开发，加速稳定扩散模型运行。
 🔗 https://huggingface.co/spaces/ilumine-AI/LCM-Painter
 
-# GPT-Crawler：知识库自动爬虫工具：
+# 【重点】GPT-Crawler：知识库自动爬虫工具：
 - 爬取网站内容生成JSON文件。
 - 方便创建自定义GPTs知识库。
 🔗 https://github.com/BuilderIO/gpt-crawler
@@ -203,3 +203,7 @@ Prompt：Minimalist editorial photo, <人物姓名> portrait. --ar 4:3 --v 5
 - 可与视频进行互动对话，自动总结内容。
 - 已索引约17245个YouTube视频，计划扩展到TikTok。
 🔗 https://avse.vercel.app
+
+# 微软新手AI课程
+> 丢给老爸老妈看看能不能看懂
+https://github.com/microsoft/generative-ai-for-beginners
