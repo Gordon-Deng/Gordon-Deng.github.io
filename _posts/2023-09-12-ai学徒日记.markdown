@@ -160,7 +160,8 @@ https://bigpixel.cn
 - 项目基于 @fal_ai_data 的 LCM 模型。
 🔗 https://github.com/tldraw/draw-fast
 
-# 今日无题，学学论文
+# 【重点】今日无题，学学论文
+https://waytoagi.feishu.cn/wiki/OCXXwcOk1iDsDekyNgFcXOEVnne
 https://www.bilibili.com/read/cv28006457/?jump_opus=1
 ![](/img/in-post/2023-09-12-ai/SVD.jpg)
 
@@ -178,7 +179,7 @@ https://www.bilibili.com/read/cv28006457/?jump_opus=1
 - 特别适合小型团队和个人开发者。
 🔗 http://opensaas.sh
 
-# AppAgent - 人类操作模拟AI：
+# 【重点】AppAgent - 人类操作模拟AI：
 - 自主学习模仿人类手势，执行多种手机任务。
 - 由腾讯和德州大学达拉斯分校研究团队开发。
 🔗 https://appagent-official.github.io
