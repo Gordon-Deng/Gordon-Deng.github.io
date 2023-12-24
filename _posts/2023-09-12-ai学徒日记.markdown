@@ -161,6 +161,7 @@ https://bigpixel.cn
 🔗 https://github.com/tldraw/draw-fast
 
 # 今日无题，学学论文
+https://www.bilibili.com/read/cv28006457/?jump_opus=1
 ![](/img/in-post/2023-09-12-ai/SVD.jpg)
 
 # OpenAI大模型原理和训练过程
