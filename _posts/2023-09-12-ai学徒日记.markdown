@@ -207,3 +207,9 @@ Prompt：Minimalist editorial photo, <人物姓名> portrait. --ar 4:3 --v 5
 # 微软新手AI课程
 > 丢给老爸老妈看看能不能看懂
 https://github.com/microsoft/generative-ai-for-beginners
+
+# 扫描物体生成3D模型：
+- 使用APP扫描物体，完成3D全貌捕获。
+- 创建AR QR码，展示物体于任何地点。
+- 苹果新品官网展示中应用此技术。
+🔗 https://ar-code.com/blog/digitalizing-restaurant-menus-with-augmented-reality-qr-codes
