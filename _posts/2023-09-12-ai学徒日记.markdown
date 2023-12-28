@@ -221,3 +221,4 @@ https://github.com/microsoft/generative-ai-for-beginners
 - 自动判断用户意图，决定是否联网查询。
 - 支持Google和Bing，计划扩展更多服务和场景。
 https://github.com/fatwang2/search2ai
+
