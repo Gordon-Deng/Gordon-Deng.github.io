@@ -238,3 +238,9 @@ https://github.com/fatwang2/search2ai
 - 包含爬虫功能，剪辑并转换网站内容。
 - 支持多种输出格式，适用于数据提取。
 http://github.com/philschmid/clipper.js/tree/main
+
+# Magnific AI图像升级器：
+- 图像提升至10K级别。
+- 支持Midjourney图像放大8倍。
+- 新特性：Fractality滑块。
+🔗 https://x.com/xiaohuggg/status/1744559983243694528...
