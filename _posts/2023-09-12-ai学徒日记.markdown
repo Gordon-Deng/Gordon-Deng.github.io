@@ -257,3 +257,9 @@ http://github.com/philschmid/clipper.js/tree/main
 - 支持面部交换和文本引导编辑功能。
 - 结合文本引导和模型调整的双轴方法。
 🔗 Personalized Restoration via Dual-Pivot Tuning
+
+# Topaz Video AI 4发布，提升视频至16K分辨率：
+- 引入24种时序感知AI模型。
+- 电影级噪声去除技术。
+- 单次购买299美元。
+🔗 https://topazlabs.com/topaz-video-ai
