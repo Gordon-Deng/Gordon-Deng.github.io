@@ -263,3 +263,16 @@ http://github.com/philschmid/clipper.js/tree/main
 - 电影级噪声去除技术。
 - 单次购买299美元。
 🔗 https://topazlabs.com/topaz-video-ai
+
+# LEGO多模态理解模型：
+- 由字节跳动和复旦大学开发。
+- 支持图像、音频、视频输入，具备精准定位能力。
+- 可用于识别图像中物体位置，视频事件时间点，音频声源。
+🔗 https://x.com/xiaohuggg/status/1745763961323262056?s=20
+🔗 https://lzw-lzw.github.io/
+
+# Surya：多语言文档OCR工具：
+- 提供准确的逐行文本检测和识别。
+- 特点：逐行文本检测，文本识别，表格和图表检测（即将推出）。
+- 支持语言：包括英语、中文、日文、印地语等。
+🔗 https://x.com/xiaohuggg/status/1746501071839883428?s=20
