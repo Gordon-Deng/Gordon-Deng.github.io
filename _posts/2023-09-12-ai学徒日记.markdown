@@ -275,4 +275,4 @@ http://github.com/philschmid/clipper.js/tree/main
 - 提供准确的逐行文本检测和识别。
 - 特点：逐行文本检测，文本识别，表格和图表检测（即将推出）。
 - 支持语言：包括英语、中文、日文、印地语等。
-🔗 https://x.com/xiaohuggg/status/1746501071839883428?s=20
+🔗 https://t.co/HvqtVwNZ7p
