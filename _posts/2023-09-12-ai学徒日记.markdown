@@ -276,3 +276,12 @@ http://github.com/philschmid/clipper.js/tree/main
 - 特点：逐行文本检测，文本识别，表格和图表检测（即将推出）。
 - 支持语言：包括英语、中文、日文、印地语等。
 🔗 https://t.co/HvqtVwNZ7p
+
+# Portkey AI网关 - 连接多种AI模型的工具：
+- 提供简单API接口，连接超过100种大语言模型。
+- 包括OpenAI、Anthropic等知名AI服务。
+- 体积仅45kb，处理速度提升9.9倍。
+- 灵活配置，方便切换不同AI服务。
+🔗 https://github.com/Portkey-AI/gateway
+
+# 大厂入局
