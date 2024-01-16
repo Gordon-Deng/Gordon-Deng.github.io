@@ -285,3 +285,8 @@ http://github.com/philschmid/clipper.js/tree/main
 🔗 https://github.com/Portkey-AI/gateway
 
 # 大厂入局
+# PhotoMaker - 创造个性化人物图像：
+- 可以根据文字描述生成人物照片。
+- 能混合不同人物特征创造新形象。
+- 改变照片中人物的性别、年龄。
+🔗 https://photo-maker.github.io
