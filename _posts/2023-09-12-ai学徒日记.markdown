@@ -290,3 +290,7 @@ http://github.com/philschmid/clipper.js/tree/main
 - 能混合不同人物特征创造新形象。
 - 改变照片中人物的性别、年龄。
 🔗 https://photo-maker.github.io
+
+# 不错的博客
+# 
+https://www.xiaoyuzhoufm.com/episode/65a2a75fb5e4856c70801eba
