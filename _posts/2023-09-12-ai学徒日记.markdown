@@ -294,3 +294,6 @@ http://github.com/philschmid/clipper.js/tree/main
 # 不错的博客
 # 24、25 年会是下一代浪潮最关键的两年 | AI 年终复盘
 https://www.xiaoyuzhoufm.com/episode/65a2a75fb5e4856c70801eba
+
+# 文生图/文生视频技术发展路径与应用场景
+[文生图/文生视频技术发展路径与应用场景](https://mp.weixin.qq.com/s/pOLIf6JVQ_b8v3T6LcA7Fg)
