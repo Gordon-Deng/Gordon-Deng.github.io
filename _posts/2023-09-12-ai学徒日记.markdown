@@ -297,3 +297,9 @@ https://www.xiaoyuzhoufm.com/episode/65a2a75fb5e4856c70801eba
 
 # 文生图/文生视频技术发展路径与应用场景
 [文生图/文生视频技术发展路径与应用场景](https://mp.weixin.qq.com/s/pOLIf6JVQ_b8v3T6LcA7Fg)
+
+# 26种多模态大模型研究报告：
+- 全面分析市面上的26种多模态大语言模型（MM-LLMs）
+- 涵盖模型架构、训练流程设计
+- 每种模型具有独特设计和功能
+🔗 https://arxiv.org/abs/2401.13601
