@@ -310,6 +310,12 @@ https://www.xiaoyuzhoufm.com/episode/65a2a75fb5e4856c70801eba
 - GPT-4 Turbo预览版模型更新，提高代码生成等任务的完成度。
 🔗 https://x.com/xiaohuggg/status/1750688990104330481?s=20
 
+# Adept Fuyu-Heavy：多模态数字代理模型
+- 世界第三大多模态模型，擅长理解用户界面。
+- 可以解释和操作各种软件和应用程序的界面。
+- 帮助执行任务如自动化流程、响应查询等。
+🔗 https://x.com/xiaohuggg/status/1750704152605499508?s=20
+
 
 # 重要-ChatGPT推出Mention功能
 - Mention可以在ChatGPT的聊天窗口中通过@来直接召唤任何GPTs，就像Discord里面召唤其他机器人一样
