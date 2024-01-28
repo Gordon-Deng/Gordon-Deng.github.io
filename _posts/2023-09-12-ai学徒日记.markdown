@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "ai学徒日记 "
-subtitle:   "\"AI\""
+title:      "AI学徒日记 "
+subtitle:   "\"躬身入局，把手弄脏\""
 date:       2023-09-12 12:00:00
 author:     "Gordon"
 header-img: "img/in-post/2018-03-24-http/http-bg.jpg"

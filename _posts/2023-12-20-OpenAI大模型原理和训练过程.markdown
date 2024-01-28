@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "OpenAI大模型原理和训练过程"
-subtitle:   "\"how openai begin training\""
+title:      "一图胜千言-AI原理好图学习日志"
+subtitle:   "\"how AI work\""
 date:       2023-12-20 12:00:00
 author:     "Gordon"
 header-img: "img/in-post/2018-03-24-http/http-bg.jpg"
@@ -12,3 +12,5 @@ tags:
 
 > https://www.bilibili.com/video/BV1ts4y1T7UH
 > https://mp.weixin.qq.com/s?__biz=MzIxODUzNTg2MA==&mid=2247485342&idx=1&sn=770152ca8a00f2e3d87ed2a09e131e11
+
+
