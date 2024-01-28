@@ -1,0 +1,13 @@
+---
+layout:     post
+title:      "AI村晚"
+subtitle:   "\"搞定事情，让2023没做的没学的2024做起来\""
+date:       2024-01-20 12:00:00
+author:     "Gordon"
+header-img: "img/in-post/2020-01-20-todo/todo-bg.jpg"
+catalog: true
+tags:
+    - AI
+---
+
+
