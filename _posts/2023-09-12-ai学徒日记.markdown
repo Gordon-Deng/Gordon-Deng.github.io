@@ -328,3 +328,9 @@ https://www.xiaoyuzhoufm.com/episode/65a2a75fb5e4856c70801eba
 - 在医疗领域和中华传统文化理解方面表现突出。
 - 引入创新技术，提高训练效率和数据质量。
 🔗 https://x.com/xiaohuggg/status/1751830719222124727?s=20
+
+# SliceGPT - 微软开发的大语言模型压缩方法：
+- 在保持高性能的同时大幅减少模型参数。
+- 允许在更少的GPU上运行，提高运行速度。
+- 显著降低了在消费级GPU上的总计算量。
+🔗 https://arxiv.org/abs/2401.15024
