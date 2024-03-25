@@ -339,3 +339,6 @@ https://www.xiaoyuzhoufm.com/episode/65a2a75fb5e4856c70801eba
 - 无需训练，与任何模型集成。
 - 支持文本提示的各种视频编辑，包括风格转换和面部替换。
 🔗 https://tiger-ai-lab.github.io/AnyV2V/
+
+# Apple Vision Pro教育应用：
+- Insight Heart应用程序提供360度心脏学习体验。
