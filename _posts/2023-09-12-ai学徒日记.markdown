@@ -334,3 +334,8 @@ https://www.xiaoyuzhoufm.com/episode/65a2a75fb5e4856c70801eba
 - 允许在更少的GPU上运行，提高运行速度。
 - 显著降低了在消费级GPU上的总计算量。
 🔗 https://arxiv.org/abs/2401.15024
+
+# AnyV2V视频编辑框架：
+- 无需训练，与任何模型集成。
+- 支持文本提示的各种视频编辑，包括风格转换和面部替换。
+🔗 https://tiger-ai-lab.github.io/AnyV2V/
