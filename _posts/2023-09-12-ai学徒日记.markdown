@@ -342,3 +342,9 @@ https://www.xiaoyuzhoufm.com/episode/65a2a75fb5e4856c70801eba
 
 # Apple Vision Pro教育应用：
 - Insight Heart应用程序提供360度心脏学习体验。
+
+#  DALL-E 3图像再编辑：
+- 支持对生成图像的选定区域进行修改。
+- 引入编辑器增强图像编辑能力。
+- 处于灰度测试阶段。
+🔗 https://x.com/imxiaohu/status/1772470419435536696?s=20
