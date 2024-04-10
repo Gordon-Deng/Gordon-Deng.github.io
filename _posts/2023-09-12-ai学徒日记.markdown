@@ -348,3 +348,7 @@ https://www.xiaoyuzhoufm.com/episode/65a2a75fb5e4856c70801eba
 - 引入编辑器增强图像编辑能力。
 - 处于灰度测试阶段。
 🔗 https://x.com/imxiaohu/status/1772470419435536696?s=20
+
+# Hand Talk：
+- AI手语翻译，联合国最佳社交应用，
+🔗 https://www.handtalk.me/en/app/
