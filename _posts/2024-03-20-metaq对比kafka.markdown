@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "metaq对比kafuka"
+title:      "metaq对比kafka"
 subtitle:   "\"消息队列小思考\""
 date:       2024-03-20 12:00:00
 author:     "Gordon"
